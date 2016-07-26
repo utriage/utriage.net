@@ -1,9 +1,11 @@
 # Site
-title: Halve
-description: Stylish, Two-Column Jekyll Theme
-url: http://taylantatli.me/Halve
+title: Ultimate Triage
+description: World of Warcraft Enthusiasts in US-Proudmoore (A)
+url: https://utriage.net
 logo: halve.png                                       # Site logo
-locale: en_US
+locale:
+- ja
+- ja_JP
 
 # Left Block Images
 background:
@@ -31,10 +33,10 @@ sass:
 # Social Links
 #email:             email
 #google.plus:        username
-twitter:            username
+twitter:            gada_twt
 #facebook:           username
-github:             username
-stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
+github:             ymtszw
+# stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
 #instagram:          username
@@ -52,7 +54,7 @@ stackoverflow:     123456/username   from a "http://stackoverflow.com/users/1234
 #keybase:           username
 #xmpp:              username@server.com
 #hackernews:        username
-behance:           username
+#behance:           username
 
 # Gems
 gems:
