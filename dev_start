@@ -1,0 +1,3 @@
+#!/bin/sh
+# Use _config_dev.yml to specify localhost URL for dev
+jekyll serve --config _config.yml,_config_dev.yml $@
