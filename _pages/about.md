@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About Guild
+title: "ギルド紹介"
 date: "2016-07-30"
-description: "About Guild Ultimate Triage."
+excerpt: "ギルドUltimate Triageについて"
 author: "Ultimate Triage"
 permalink: /about.html
 image: "images/garrosh-mythic.jpg"

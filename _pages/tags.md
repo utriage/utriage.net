@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tagged Archive
-description: "An archive of posts sorted by tag."
+excerpt: "タグ別記事アーカイブ"
 permalink: /tags.html
 ---
 
