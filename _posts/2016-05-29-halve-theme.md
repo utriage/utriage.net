@@ -4,7 +4,7 @@ title:  "Halve Jekyll Theme"
 date:   2016-05-29
 excerpt: "Stylish, two-column Jekyll theme for your blog."
 tag:
-- jekyll 
+- jekyll
 - halve
 - blog
 - vangeltzo
@@ -12,14 +12,14 @@ tag:
 - vangelis
 ---
 
-<a href="{{ site.url }}/images/halve-home-image.png"><img src="{{ site.url }}/images/halve-home-image.png" alt="Home Page of Halve"></a>  
+[![Home page image]({{ site.url }}/images/halve-home-image.png)]({{ site.url }}/images/halve-home-image.png){:data-lightbox="post"}
 
 <center><b>Halve</b> is a stylish, two-column jekyll theme.</center><br>
-     
+
  This theme is Jekyll port of [vangeltzo.com](http://vangeltzo.com/) (by [Vangelis Tzortzis](https://github.com/srekoble)). I couldn't stop myself to port this theme when I saw his site. And he kindly gave me permission to share this with you.
 
-<iframe src="https://ghbtns.com/github-btn.html?user=TaylanTatli&repo=Halve&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>    
-      
+<iframe src="https://ghbtns.com/github-btn.html?user=TaylanTatli&repo=Halve&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+
 ## Installation and Quick Usage
 * Fork the [Halve repo](https://github.com/TaylanTatli/Halve/fork)
 * Edit `_config.yml` file.
@@ -28,8 +28,8 @@ tag:
 * Add a logo with a small one to `images` folder. (eg. `logo.png`, `logo-small.png`)
 * Remove sample posts from `_posts` folder and add yours.
 * Remove/Change sample images from `images` folder.
-* Change repo name to `YourUserName.github.io`    
-     
+* Change repo name to `YourUserName.github.io`
+
 That's all.
 
 If you want to make a **Project Page**, you have to use `gh-pages` branch. For **Personal Page**; `master` branch. More info [here](https://help.github.com/articles/about-github-pages-and-jekyll/#jekylls-build-process).
@@ -49,11 +49,11 @@ If you want to make a **Project Page**, you have to use `gh-pages` branch. For *
 	{{ site.url }}/images/post-image-halve-4.png
 {% endcapture %}
 {% include gallery images=images caption="Mobile view of Halve Theme" cols=3 %}
-      
-See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.      
+
+See a [live version of Halve](http://taylantatli.github.io/Halve) hosted on GitHub.
 
 ## Site Setup
-A quick checklist of the files you’ll want to edit to get up and running.    
+A quick checklist of the files you’ll want to edit to get up and running.
 
 ### Site Wide Configuration
 `_config.yml` is your friend. Open it up and personalize it. Most variables are self explanatory but here's an explanation of each if needed:
@@ -91,7 +91,7 @@ Here we will set images for left block. Example:
 background:
   homepage: images/home.png
   post-list: images/unsplash-image-10.jpg
-  default-post: images/unsplash-gallery-image-3.jpg 
+  default-post: images/unsplash-gallery-image-3.jpg
 ```
 
 <dl>
@@ -150,10 +150,10 @@ You can set left block image per post. Just add `image: some link` to your post'
 image: /assets/img/some-image.png
 or
 image: http://example.com/some-image.png
-```    
+```
  This also will be used for twitter card:
 
-![Halve Twitter Card]({{ site.url }}/images/post-image-halve-5.png)
+[![Halve Twitter Card]({{ site.url }}/images/post-image-halve-5.png)]({{ site.url }}/images/post-image-halve-5.png){:data-lightbox="post"}
 
 ---
 
