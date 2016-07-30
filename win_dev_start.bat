@@ -1,3 +1,3 @@
-#!/bin/sh
-# Use _config_dev.yml to specify localhost URL for dev
+@echo off
+:: SSL_CERT_FILE env var and root CA file is required
 jekyll serve --incremental --config _config.yml,_config_dev.yml $@
