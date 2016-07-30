@@ -40,7 +40,7 @@ backtickを使うと`<pre>`タグつき。
 2. インデント
     1. 子要素
 
-![こうすると画像](images/blackrock-mountain.jpg)
+![こうすると画像](/images/blackrock-mountain.jpg)
 
 ```
 backtick3つのブロックで囲むとコード表記。
@@ -78,7 +78,7 @@ backtickを使うと`<pre>`タグつき。
 2. インデント
     1. 子要素
 
-![こうすると画像](images/blackrock-mountain.jpg)
+![こうすると画像](/images/blackrock-mountain.jpg)
 
 ```
 backtick3つのブロックで囲むとコード表記。
@@ -99,8 +99,8 @@ backtick3つのブロックで囲むとコード表記。
 こんな感じ。
 
 {% capture images %}
-	images/dalaran.jpg
-	images/gate-of-stormwind.jpg
-	images/blackrock-mountain.jpg
+	/images/dalaran.jpg
+	/images/gate-of-stormwind.jpg
+	/images/blackrock-mountain.jpg
 {% endcapture %}
 {% include gallery images=images caption="Screenshots" cols=3 %}
