@@ -41,7 +41,7 @@ Legendary装備がGuild Raid中にドロップした場合は、GM裁定で一�
 (出席率・パフォーマンス・すでにLegendaryをいくつ持っているかを勘案。3つまでしか装備できません)
 
 
-## サイトについて
+## About this site
 
 静的サイトジェネレータ[Jekyll](https://jekyllrb.com/)を使用し、Github pagesで公開しています。
 
@@ -49,3 +49,5 @@ Legendary装備がGuild Raid中にドロップした場合は、GM裁定で一�
 
 ソースは[こちら](https://github.com/ymtszw/utriage)にあります。記事を書きたい場合はPRしてください！
 ……と言いたいところですが流石に面倒な人のほうが多い思うので、適当にテキストで書いてGadagarrに送ってください。整形して載せます。
+
+- [ちょっとだけmarkdownの紹介](/how-to-post)
