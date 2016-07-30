@@ -71,10 +71,10 @@ Passiveを中心にしてボタンを減らすこともできるし、逆にActi
 
 ## やること：Mog装備・Illusion・Mount集め
 別にそこまで集めてない、って人もいると思いますが、いざ欲しくなったときに集めようとしても、
-拡張始まってしまっていると他にやることが多くてなかなか時間取れないというパターンはありがちです。
+拡張始まってしまっていると他にやることが多くてなかなか時間取れないというパターンはありがち。
 
 特に7.0.3の変更によってソロ力が増したスペックであれば、MoPのRaidを楽にソロできるようになっているので、
-欲しいものがある人はチャンス到来です。
+欲しいものがある人はチャンス到来。
 
 既にこんな報告もあり。
 
@@ -91,12 +91,12 @@ UTでも1回くらいやる。。。かも？
 これもやれなくなります。武器マウント欲しい人はがんばれ。
 
 ## やること：(8/9以降)[Pre-launch Event](http://www.wowhead.com/guides/legion/pre-patch-demon-event)
-各地にLegion invasionが発生し、ワールドマップから確認できます。
+各地にLegion invasionが発生し、ワールドマップから確認できる。
 
-イベントは定期的に繰り返し発生し、居合わせることができればクリア時に[トークン](http://www.wowdb.com/currencies/1226-nethershard)をもらえます。
-トークンはMog装備セットやペットと交換できます。
+イベントは定期的に繰り返し発生し、居合わせることができればクリア時に[トークン](http://www.wowdb.com/currencies/1226-nethershard)をもらえる。
+トークンはMog装備セットやペットと交換可能。
 
-また**イベントクリア時にもらえる宝箱からは限定モデルの武器が出る**可能性があります。
+また**イベントクリア時にもらえる宝箱からは限定モデルの武器が出る**可能性あり。
 
 加えて、Broken Shoreのイントロクエストが開始でき、Legion拡張の導入ストーリーが語られるほか、
 **Alliance/Hordeで異なるモデルの武器**がもらえるようです。
@@ -104,4 +104,4 @@ UTでも1回くらいやる。。。かも？
 ## やること：時間を確保する。体調を整える。気分を高める
 個人的には今回のCinematic Trailerは結構好きなのでたまに見返してます。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eYNCCu0y-Is" frameborder="0" allowfullscreen></iframe>
+{% include youtube_embed src="https://www.youtube.com/embed/eYNCCu0y-Is" %}

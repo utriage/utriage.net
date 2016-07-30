@@ -1,0 +1,5 @@
+{% assign src = include.src %}
+
+<div class="movie-wrap">
+  <iframe src="{{ src }}" frameborder="0" allowfullscreen></iframe>
+</div>
