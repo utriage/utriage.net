@@ -1,11 +1,14 @@
 ---
 layout: page
-title: About
+title: About Guild
 date: "2016-07-30"
 description: "About Guild Ultimate Triage."
 author: "Ultimate Triage"
 permalink: /about.html
+image: "images/garrosh-mythic.jpg"
 ---
+
+[![Ultimate Triage](images/utriage.jpg)](images/utriage.jpg){:data-lightbox="banner"}
 
 ## Ultimate Triage
 
@@ -40,6 +43,17 @@ LootはMaster Looterを使用しますが、基本的に"Roll what you need"で�
 Legendary装備がGuild Raid中にドロップした場合は、GM裁定で一番活かしてくれそうな方に渡します。
 (出席率・パフォーマンス・すでにLegendaryをいくつ持っているかを勘案。3つまでしか装備できません)
 
+## Tools and AddOns
+
+音声チャットに[Discord](https://discordapp.com/)を使用します。招待リンクは[こちら](https://discordapp.com/invite/01054r0A2JBGjMlKi)。
+
+ログは[World of Logs](https://www.warcraftlogs.com/guilds/4199/)にアップロードしています。
+
+AddOn:
+
+- [Exorsus Raid Tools](https://mods.curse.com/addons/wow/exorsus-raid-tools) (**必須**)
+- Boss mod (こだわりがなければ[DBM](https://mods.curse.com/addons/wow/deadly-boss-mods)。基本的には必須)
+- [WeakAuras 2](https://mods.curse.com/addons/wow/weakauras-2) (推奨)
 
 ## About this site
 
