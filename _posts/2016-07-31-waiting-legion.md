@@ -6,7 +6,7 @@ author:  Gadagarr
 image:   "images/legion.jpg" # header image
 tag:
 - blog
-# - raid
+- patch
 - legion
 ---
 
@@ -15,7 +15,8 @@ tag:
 - Transmogシステムが大幅に改善
     - 「装備可能」で「Soulbound」になったアイテムの見た目を「覚える」
     - 一度覚えたアイテムは売ってしまってOK
-    - 覚えたアイテムのリストはWardrobe(Collectionウィンドウの一番右、"Appearance"タブ)で見られる
+    - 覚えたアイテムのリストはWardrobe(Collectionウィンドウの一番右、"Appearances"タブ)で見られる
+      [![Wardrobe](/images/wardrobe.jpg)](/images/wardrobe.jpg){:data-lightbox="wardrobe"}
     - Enchant(Illusion)も同じ枠組みで変更できる
 - Nameplate周りも大幅に改善
     - ターゲットのNameplateは距離関係なく表示される
@@ -36,6 +37,7 @@ tag:
     - HntのSurvivalスペックはMeleeになった
     - LockのDemonologyスペックはデーモンを召喚するだけになり、変身は~~[DHに取られた](http://www.wowdb.com/spells/187827-metamorphosis)~~無くなった
     - 他にも色々
+- **近接攻撃アニメーションが刷新**
 - 8/9から**拡張前イベント＋Demon Hunter解禁**
 
 ## やること：AddOnアップデート
