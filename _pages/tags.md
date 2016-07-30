@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tag Archive
+title: Tagged Archive
 description: "An archive of posts sorted by tag."
 permalink: /tags.html
 ---
