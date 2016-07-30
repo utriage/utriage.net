@@ -69,6 +69,18 @@ Passiveを中心にしてボタンを減らすこともできるし、逆にActi
 ちなみにスペックが自由に変えられるようになった影響で、Macroの`[spec:n]`条件が使えなくなってしまった(常時`[spec:1]`と判定される)。
 個人的には結構打撃だったけど、スキルが減ったのでMacro依存を減らすいい機会になった。
 
+## やること：Mog装備・Illusion・Mount集め
+別にそこまで集めてない、って人もいると思いますが、いざ欲しくなったときに集めようとしても、
+拡張始まってしまっていると他にやることが多くてなかなか時間取れないというパターンはありがちです。
+
+特に7.0.3の変更によってソロ力が増したスペックであれば、MoPのRaidを楽にソロできるようになっているので、
+欲しいものがある人はチャンス到来です。
+
+既にこんな報告もあり。
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Elegon Mount出たやで <a href="https://t.co/oUwIoFSKOC">pic.twitter.com/oUwIoFSKOC</a></p>&mdash; kameo (@kameo1048) <a href="https://twitter.com/kameo1048/status/757553888434061314">2016年7月25日</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## やること：[Moose](http://www.wowdb.com/items/128422-reins-of-the-grove-warden)を取る
 Mythic [Archimonde](http://www.wowdb.com/items/123890-felsteel-annihilator)/[Blackhand](http://www.wowdb.com/items/116660-ironhoof-destroyer)のマウントは例によってレアドロップ化しますが、
 こちらは取れなくなります。Heroic Archimonde倒せば必ずもらえます。がんばってください。
@@ -77,3 +89,19 @@ UTでも1回くらいやる。。。かも？
 
 ## やること：チャレモ
 これもやれなくなります。武器マウント欲しい人はがんばれ。
+
+## やること：(8/9以降)[Pre-launch Event](http://www.wowhead.com/guides/legion/pre-patch-demon-event)
+各地にLegion invasionが発生し、ワールドマップから確認できます。
+
+イベントは定期的に繰り返し発生し、居合わせることができればクリア時に[トークン](http://www.wowdb.com/currencies/1226-nethershard)をもらえます。
+トークンはMog装備セットやペットと交換できます。
+
+また**イベントクリア時にもらえる宝箱からは限定モデルの武器が出る**可能性があります。
+
+加えて、Broken Shoreのイントロクエストが開始でき、Legion拡張の導入ストーリーが語られるほか、
+**Alliance/Hordeで異なるモデルの武器**がもらえるようです。
+
+## やること：時間を確保する。体調を整える。気分を高める
+個人的には今回のCinematic Trailerは結構好きなのでたまに見返してます。
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eYNCCu0y-Is" frameborder="0" allowfullscreen></iframe>

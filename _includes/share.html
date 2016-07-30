@@ -1,3 +1,3 @@
 {% if page.share != false %}
-  <a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" class="btn btn_twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Tweet!</span></a>
+  <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}+{{ site.url }}{{ page.url }}" class="btn btn_twitter" title="Share on Twitter"><i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Tweet!</span></a>
 {% endif %}
