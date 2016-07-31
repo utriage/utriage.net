@@ -8,6 +8,9 @@ tag:
 ---
 
 ## 作りました！
+
+[![Site Top](/images/site_top.png)](/images/site_top.png){:data-lightbox="site"}
+
 [About](/about#about-this-site)ページにちょこちょこ書きましたが、
 Github PagesとJekyllという静的サイトジェネレータを使って作っています。
 WordPress好きくないんじゃ！

@@ -1,4 +1,5 @@
 .block-left {
+  width: $left-ratio;
   float: left;
   display: table;
   background-color: rgba(0, 0, 0, 0.3);
@@ -13,6 +14,7 @@
 }
 
 .block-right {
+  width: 100% - $left-ratio;
   float: right;
   overflow-y: auto;
   display: block;
@@ -20,7 +22,6 @@
 
 .block-left,
 .block-right {
-  width: 50%;
   height: 100%;
   position: relative;
   > div {
