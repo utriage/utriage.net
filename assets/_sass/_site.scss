@@ -1,6 +1,10 @@
 .block-left {
   float: left;
   display: table;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
   .content {
     z-index: 1;
     position: relative;
@@ -29,7 +33,7 @@
 
 .inactive {
   pointer-events: none;
-  pointer: default;
+  cursor: default;
 }
 
 .content {

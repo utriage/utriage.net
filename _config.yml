@@ -38,3 +38,22 @@ gems:
 # Exclude list
 include: [_pages]
 exclude: [README.md, Gemfile, Gemfile.lock, _site, src, vendor, CNAME, LICENSE, Rakefile, .sass-cache, .DS_Store]
+
+# Default front amtters
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Ultimate Triage"
+      tag:
+      - blog
+  -
+    scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
+      author: "Ultimate Triage"

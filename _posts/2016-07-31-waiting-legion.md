@@ -1,5 +1,4 @@
 ---
-layout:  post
 title:   "Legion来るまでにやること"
 excerpt: "記事水増しも兼ねて雑にまとめ"
 author:  Gadagarr
@@ -27,7 +26,7 @@ tag:
 - **遠くまで見えるようになった**
     - フィールドに出てみるとわかるが結構大きな変更。
     - Ironforgeの程近くからBastion of Twilightが見えたりする。
-- **カメラの最大望遠距離が20ydsほど短くなった**
+- **カメラの最大俯瞰距離が20ydsほど短くなった**
     - Raidするときは結構ダルいNerf。
 - Spec/Talentは**Restエリアにいる限り自由に変えられる**ようになった。
     - Restエリア外で変えるためには[Inscriptionで作る消費アイテム](http://www.wowdb.com/items/141640-tome-of-the-clear-mind)が必要。
@@ -46,7 +45,7 @@ tag:
 今やっておかないと新コンテンツ来てから泥縄でやることになり、辛い。
 
 ## やること：アイテム整理・売り抜け
-7.0.3まではGarrisonのMission/Naval Missionでマジで何もしなくても金が稼げたのだが、残念ながら終了してしまった。
+6.2.4まではGarrisonのMission/Naval Missionでマジで何もしなくても金が稼げたのだが、残念ながら終了してしまった。
 代わりにPrimal SpiritをはじめとするProf素材が報酬になったMissionが複数ある。
 Prof素材は拡張が変わると流通量が減るため高価格になることもままあるが、需要自体は減るのでしばらく売れづらくなる。
 今のうちにアイテム整理を兼ねて売り抜けてしまうのもあり。

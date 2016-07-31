@@ -53,25 +53,20 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
   <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/vendor/css/lightbox.min.css">
-  <!-- Left Block Image for Posts -->
+  <!-- Left Block Image -->
   {% if page.image %}
-  {% capture image %}{{ page.image }}{% endcapture %}
-  {% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
-  <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url({{ image }}) no-repeat;background-size: cover;}
-  </style>
+    {% capture image %}{{ page.image }}{% endcapture %}
+    {% unless image contains 'http://' or image contains 'https://' %}
+      {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
+    {% endunless %}
   {% else %}
-  <style type="text/css">
-    #posts.inner-post-page .block-left {background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.default-post }}) no-repeat;background-size: cover;}
-  </style>
+    {% if page.layout == 'home' %}
+      {% capture image %}{{ site.url }}/{{ site.background.homepage }}{% endcapture %}
+    {% else %}
+      {% capture image %}{{ site.url }}/{{ site.background.default-post }}{% endcapture %}
+    {% endif %}
   {% endif %}
-  <!-- Left Block Images for Home and Pages -->
   <style type="text/css">
-    #posts .block-left {background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.post-list }}) no-repeat;background-size: cover, cover;}
-    .block-left {background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url({{ site.url }}/{{ site.background.homepage }}) no-repeat;background-size: cover;}
+    .block-left {background-image: url({{ image }});}
   </style>
-  <!-- <script type="text/javascript" src="//wow.zamimg.com/widgets/power.js"></script>
-  <script>
-    var wowhead_tooltips = { "colorlinks": false, "iconizelinks": false, "renamelinks": false }
-  </script> -->
 </head>

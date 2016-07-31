@@ -1,5 +1,4 @@
 ---
-layout:  post
 title:   "Ultimate Triage 新ギルドサイト"
 author:  Gadagarr
 excerpt: "オープン報告、 Raidについて、素材募集"

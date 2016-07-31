@@ -1,9 +1,7 @@
 ---
-layout: page
 title: "ギルド紹介"
 date: "2016-07-30"
 excerpt: "ギルドUltimate Triageについて"
-author: "Ultimate Triage"
 permalink: /about.html
 image: "images/garrosh-mythic.jpg"
 ---

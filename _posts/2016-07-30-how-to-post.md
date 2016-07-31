@@ -1,5 +1,4 @@
 ---
-layout:  post
 title:   "Markdownでギルドブログに記事を書く"
 excerpt: "書いてみたい人がいるかもしれないので、ほんとにさわりだけ説明。"
 author:  Gadagarr

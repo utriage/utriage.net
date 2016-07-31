@@ -1,6 +1,5 @@
 ---
-layout: page
-title: Tagged Archive
+title: アーカイブ
 excerpt: "タグ別記事アーカイブ"
 permalink: /tags.html
 ---
