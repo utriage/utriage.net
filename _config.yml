@@ -1,14 +1,14 @@
 # Site
-title: Ultimate Triage
-description: World of Warcraft Guild in US-Proudmoore (A)
-url: http://www.utriage.net
-logo: logo.png                                       # Site logo
-locale:
-- ja_JP
+title:            Ultimate Triage
+description:      World of Warcraft Guild in US-Proudmoore (A)
+url:              http://www.utriage.net
+logo:             logo.png
+locale:           ja_JP
+google-analytics: UA-81643772-1
 
 # Left Block Images
 background:
-  homepage: images/garrison.jpg
+  homepage:     images/garrison.jpg
   default-post: images/gate-of-stormwind.jpg
 
 # Jekyll
