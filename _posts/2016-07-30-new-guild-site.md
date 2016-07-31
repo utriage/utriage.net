@@ -21,7 +21,7 @@ WordPress好きくないんじゃ！
 
 ## Raidについて
 LegionではHeroic Raidを開催します！
-条件は例によって緩いですが、一応[About](/about/#raiding)ページに簡単に書きました。
+条件は例によって緩いですが、一応[About](/about#raiding)ページに簡単に書きました。
 
 - Artifact武器のクエストラインを各自でやること。
 - パッチが進んだらItem Level制限設けるかも(最初はなし)。
