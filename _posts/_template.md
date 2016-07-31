@@ -1,5 +1,4 @@
 ---
-layout:  post
 title:   title
 excerpt: description
 author:  author

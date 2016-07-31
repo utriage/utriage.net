@@ -39,7 +39,7 @@ LootはMaster Looterを使用しますが、基本的に"Roll what you need"で�
 新方式のPersonal Lootが実用上問題なさそうであればそちらを採用するかも。
 
 Legendary装備がGuild Raid中にドロップした場合は、GM裁定で一番活かしてくれそうな方に渡します。
-(出席率・パフォーマンス・すでにLegendaryをいくつ持っているかを勘案。3つまでしか装備できません)
+(出席率・パフォーマンス・すでにLegendaryをいくつ持っているかを勘案。 **2つ**までしか装備できません)
 
 ## Tools and AddOns
 
