@@ -31,6 +31,10 @@ Diablo3方式の輸入っぽい感じです。実際[Thundergod's Vigor](http://
 
 その代わり(最終的に) **2つ**しか装備できません。
 
+追記：そして、PvPでも手に入るのに、 **PvPでは使えません！**[^pvp]
+
+[^pvp]: Instanced PvP (BG/Arena)の話。World PvPでは使えるよ！
+
 ## 例 (Warrior)
 
 ### [Kazzalax, Fujieda's Fury](http://www.wowdb.com/items/137053-kazzalax-fujiedas-fury)
