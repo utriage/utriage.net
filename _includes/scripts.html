@@ -1,3 +1,4 @@
+<!-- Lighbox -->
 <script type="text/javascript" src="{{ site.url }}/assets/vendor/js/lightbox-plus-jquery.min.js"></script>
 <script>
   lightbox.option({
@@ -6,7 +7,15 @@
     'wrapAround': true
   })
 </script>
+<!-- WowDB tooltips -->
 <script type="text/javascript" src="http://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
+<!-- Twitter Share Count -->
+{% capture permalink %}{{ site.public_url }}{{ page.url }}{% endcapture %}
+<script type="text/javascript">
+  $.getJSON("http://public.newsharecounts.com/count.json?url={{ permalink | url_encode }}", function(data) {
+    $('.countbubble').text(data.count);
+  });
+</script>
 {% if site.google-analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
