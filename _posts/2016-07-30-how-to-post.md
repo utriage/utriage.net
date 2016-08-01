@@ -102,4 +102,4 @@ backtick3つのブロックで囲むとコード表記。
 	/images/gate-of-stormwind.jpg
 	/images/blackrock-mountain.jpg
 {% endcapture %}
-{% include gallery images=images caption="Screenshots" cols=3 %}
+{% include gallery.html images=images caption="Screenshots" cols=3 %}

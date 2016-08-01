@@ -12,6 +12,9 @@ background:
   homepage:     images/garrison.jpg
   default-post: images/gate-of-stormwind.jpg
 
+# Post related
+max_related_posts: 4
+
 # Jekyll
 permalink:          /:title/
 markdown:           kramdown

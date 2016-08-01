@@ -105,4 +105,4 @@ UTでも1回くらいやる。。。かも？
 ## やること：時間を確保する。体調を整える。気分を高める
 個人的には今回のCinematic Trailerは結構好きなのでたまに見返してます。
 
-{% include youtube_embed src="https://www.youtube.com/embed/eYNCCu0y-Is" %}
+{% include youtube_embed.html src="https://www.youtube.com/embed/eYNCCu0y-Is" %}
