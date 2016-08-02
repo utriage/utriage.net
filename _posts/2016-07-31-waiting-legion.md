@@ -88,8 +88,8 @@ Mythic [Archimonde](http://www.wowdb.com/items/123890-felsteel-annihilator)/[Bla
 
 UTでも1回くらいやる。。。かも？
 
-## やること：チャレモ
-これもやれなくなります。武器マウント欲しい人はがんばれ。
+## ~~やること：チャレモ~~
+~~これもやれなくなります。武器マウント欲しい人はがんばれ。~~ もうやれなくなってました。クリアしてた人おめでとう！
 
 ## やること：(8/9以降)[Pre-launch Event](http://www.wowhead.com/guides/legion/pre-patch-demon-event)
 各地にLegion invasionが発生し、ワールドマップから確認できる。
