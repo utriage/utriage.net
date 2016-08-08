@@ -16,6 +16,37 @@
     $('.countbubble').text(data.count);
   });
 </script>
+<!-- Link preview -->
+<script type="text/javascript">
+  var previews = $('a.link_preview');
+  jQuery.each(previews, function(i, obj) {
+    var href = $(obj).data('href');
+    var escaped = $(obj).data('escaped');
+    if (href && escaped) {
+      $.getJSON('https://opengraph.io/api/1.0/site/' + escaped, function(data) {
+        if (data.openGraph) {
+          console.dir(data.openGraph);
+          var title = $('<a></a>').attr('href', href).text(data.openGraph.title);
+          var image;
+          if (data.openGraph.image) {
+            image = $('<img>')
+              .attr('src', data.openGraph.image)
+              .attr('alt', data.openGraph.title);
+          } else {
+            image = '';
+          }
+          var desc = $('<p></p>').text(data.openGraph.description);
+          $(obj).replaceWith(
+            $('<dl></dl>')
+              .addClass('link_preview')
+              .append($('<dt></dt>').append(title))
+              .append($('<dd></dd>')
+                .append($('<div></div>').append(image).append(desc))));
+        }
+      })
+    }
+  })
+</script>
 {% if site.google-analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>

@@ -1,0 +1,4 @@
+{% assign href = include.href %}
+{% assign escaped_url = href | url_encode %}
+
+<a class="link_preview" data-href="{{ href }}" data-escaped="{{ escaped_url }}" href="{{ href }}">{{ href }}</a>
