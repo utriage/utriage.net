@@ -25,7 +25,6 @@
     if (href && escaped) {
       $.getJSON('https://opengraph.io/api/1.0/site/' + escaped, function(data) {
         if (data.openGraph) {
-          console.dir(data.openGraph);
           var title = $('<a></a>').attr('href', href).text(data.openGraph.title);
           var image;
           if (data.openGraph.image) {
