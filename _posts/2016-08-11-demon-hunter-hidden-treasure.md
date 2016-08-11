@@ -1,5 +1,5 @@
 ---
-title:   "【ネタバレ注意】Demon Hunterスタートゾーンの隠し要素"
+title:   "【ネタバレ注意】Demon Hunterスタートゾーンの隠しアイテム"
 excerpt:  >
   Demon Hunterスタートゾーン(Mardum)ではtreasureがいくつか拾える。
   取り逃してしまうと(キャラを削除して作りなおさない限り)二度と手に入らない！
