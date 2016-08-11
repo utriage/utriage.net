@@ -31,7 +31,7 @@ Mardumには帰ってくることができないので、取り逃してしま�
 
 ここにある。
 
-[![Flask](http://i.imgur.com/lpTXQ64.jpg)](http://i.imgur.com/lpTXQ64.jpg){:data-lightbox=treasures}
+[![Flask](http://i.imgur.com/lpTXQ64.jpg)](http://i.imgur.com/lpTXQ64.jpg){:data-lightbox="treasures"}
 
 ## 28スロットバッグ
 
@@ -43,7 +43,7 @@ The Fel Hammer(Dia2のアンダリエルみたいな奴がいる空中要塞)の
 
 両方載った地図はこちら。
 
-[![Map](http://i.imgur.com/41jCBLm.jpg)](http://i.imgur.com/41jCBLm.jpg){:data-lightbox=treasures}
+[![Map](http://i.imgur.com/41jCBLm.jpg)](http://i.imgur.com/41jCBLm.jpg){:data-lightbox="treasures"}
 
 動画はこちら。
 
