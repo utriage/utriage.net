@@ -40,8 +40,7 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 - [RubyInstaller](http://rubyinstaller.org/)でインストール(2.3.x推奨)。
 - [DevKit](http://rubyinstaller.org/add-ons/devkit/)もインストール。
 - Bundlerをインストールして`> bundle install`
-    - SSL関連のエラーが出たら[これ](http://qiita.com/whiteleaf7@github/items/4504b208ad2e
-    - ec1f9357)とか、
+    - SSL関連のエラーが出たら[これ](http://qiita.com/whiteleaf7@github/items/4504b208ad2eec1f9357)とか、
       [これ](http://qiita.com/shimoju/items/394818b4989b94680aaf)とかに従う。
 - `_config_dev.yml`を上記と同じように用意。
 - `> win_dev_start.bat`
