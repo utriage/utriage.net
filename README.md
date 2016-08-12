@@ -26,9 +26,11 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 
 - RubyとBundlerを好きな方法でインストールして`$ bundle install`
 - `_config_dev.yml`というファイルを以下の内容で用意。
-  ```yml
+
+  ```yaml
   url: localhost:4000
   ```
+
 - `$ ./dev_start`
     - ファイル変更時に自動で再ビルド
 - `http://localhost:4000`をブラウザで開く
