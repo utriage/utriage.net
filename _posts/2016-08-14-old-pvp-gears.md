@@ -1,5 +1,5 @@
 ---
-title:   "Transmog用に旧シーズンのPvP装備を集める"
+title:   "旧シーズンPvP装備の購入方法の変更"
 excerpt: "Honorシステムの変更に合わせて変わった点を軽く紹介。"
 author:  Gadagarr
 #image:   "images/dalaran.jpg" # header image
