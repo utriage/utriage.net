@@ -25,7 +25,7 @@ StreamerのAsmongoldが動画でまとめていましたが、旧シーズンの
     - 1250Honorで買っていた部位は1x Mark (Belts/Bracers/Cloaks)
     - 1650Honorで買っていた部位は2x Mark (Gloves/Boots/Shoulders/Off-hands/Shields)
     - 2250Honorで買っていた部位は3x Mark (Helm/Chest/Pants)
-    - クラスセット装備のEnsembleは12x Mark (全箇所)
+    - クラスセット装備のEnsembleは12x Mark (全部位)
     - 当該シーズンの全武器セット（Arsenal）は80x Mark
         - 購入クラスで装備できない武器も含めて全て解禁
 
@@ -41,7 +41,7 @@ Casualの場合、勝利しないと手に入らない反面、勝利すれば1M
 WotLK時代のHateful/Furious/Relentless**武器**は、長らく入手不可能になっていましたが、復活しました。
 NorthrendのDalaran地下、GoblinのPvPベンダーが売っています。
 
-[これ](http://www.wowdb.com/items/132736)とか、
+[これ](http://www.wowdb.com/items/42276)とか、
 [![Pummeler](http://www.adriacraft.net/images/stories/news/wotlk/season6/weapons/tier1/season6-_9806_10.jpg)](http://www.adriacraft.net/images/stories/news/wotlk/season6/weapons/tier1/season6-_9806_10.jpg){:data-lightbox="WotLK"}
 
 [これ](http://www.wowdb.com/items/42484-hateful-gladiators-rifle)なんかはイケてると思います。
