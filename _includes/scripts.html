@@ -7,6 +7,15 @@
     'wrapAround': true
   })
 </script>
+<!-- Countdown -->
+<script type="text/javascript" src="{{ site.url }}/assets/vendor/js/jquery.countdown/jquery.plugin.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/vendor/js/jquery.countdown/jquery.countdown.js"></script>
+<script type="text/javascript" src="{{ site.url }}/assets/vendor/js/jquery.countdown/jquery.countdown-ja.js"></script>
+<script type="text/javascript">
+  var countdownElem = $('#defaultCountdown');
+  var targetDate = new Date(countdownElem.data('target-date'));
+  countdownElem.countdown({until: targetDate});
+</script>
 <!-- WowDB tooltips -->
 <script type="text/javascript" src="http://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
 <!-- Twitter Share Count -->
