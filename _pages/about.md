@@ -64,7 +64,9 @@ Legion拡張ではHeroic Raidを開催します。
         - 875+ => **Heroic Trial of Valor**のドロップ下限(修正後)
             - Helyaは880+
             - Mythic+9クリア時、Weekly Chestドロップ下限
+            - Normal Nightholdのドロップ下限(予定)
         - 885+ => Mythic+12クリア時、Weekly Chestドロップ下限
+        - 890+ => **Heroic Nighthold**のドロップ下限(予定)
     - 1RaidTier単位で継続的に参加できる
         - 人数もそう多くないので具体的な出席率条件は設けませんが、
           出られない日のほうが多いような状態が数週間続く見込みであれば連絡下さい。
