@@ -9,7 +9,7 @@ google-analytics: UA-81643772-1
 
 # Left Block Images
 background:
-  homepage:     images/garrison.jpg
+  homepage:     images/dalaran.jpg
   default-post: images/gate-of-stormwind.jpg
 
 # Post related
