@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2016-12-12"
+date: "2018-02-25"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about.html
 image: "images/stardust_crusaders.png"
