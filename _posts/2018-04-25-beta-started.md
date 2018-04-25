@@ -16,7 +16,7 @@ tag:
 
 それに関してちょうど検索してみたら、Chromeの面白い機能を見つけてしまった。
 
-[![omnibox](/images/omnibox.png)](/images/omnibox.jpg){:data-lightbox="ss"}
+[![omnibox](/images/omnibox.png)](/images/omnibox.png){:data-lightbox="ss"}
 
 いろいろ賢くなっている。
 
@@ -24,7 +24,7 @@ tag:
 
 今日までαテスト実施中で、UT周辺でも当たった人がいたようですが、今日からはβテスト！早速私にもメールが来ました。
 
-[![bfa_beta](/images/bfa_beta.png)](/images/bfa_beta.jpg){:data-lightbox="ss"}
+[![bfa_beta](/images/bfa_beta.png)](/images/bfa_beta.png){:data-lightbox="ss"}
 
 GWが来ますが、ちょっと忙しいのでそんなに真面目にやれるかは微妙。とりあえずインストールは始めました。
 
