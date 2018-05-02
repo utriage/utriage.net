@@ -29,7 +29,7 @@ Markdownはいくつかの記号を使ってHTMLよりもシンプルに構造�
 間に挟まないと同じ段落の中のまま。
 
 backtickを使うと`<pre>`タグつき。
-[こうするとリンク](http://www.utriage.net)。
+[こうするとリンク](https://www.utriage.net)。
 
 - リスト
 - インデント
@@ -67,7 +67,7 @@ backtick3つのブロックで囲むとコード表記。
 間に挟まないと同じ段落の中のまま。
 
 backtickを使うと`<pre>`タグつき。
-[こうするとリンク](http://www.utriage.net)。
+[こうするとリンク](https://www.utriage.net)。
 
 - リスト
 - インデント
