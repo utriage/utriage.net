@@ -97,7 +97,7 @@ GBank の品を使いたい場合はキャラをギルドに所属させてく�
 
 ## Tools and AddOns
 
-音声チャットに[Discord](https://discordapp.com/)を使用します。招待リンクは[こちら](https://discord.gg/s6gkEHF)。
+音声チャットに[Discord](https://discordapp.com/)を使用します。招待リンクは[こちら](https://discord.gg/{{ site.discord }})。
 
 ログは[World of Logs](https://www.warcraftlogs.com/guilds/4199/)にアップロードしています。
 
