@@ -1,4 +1,4 @@
 #!/bin/sh
 # Use _config_dev.yml to specify localhost URL for dev
 # `--future` option allows rendering of future-dated posts
-bundle exec jekyll serve --livereload --incremental --future "$@"
+bundle exec jekyll serve --incremental --future "$@"

@@ -1,77 +1,131 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, user-scalable=no"
+  />
   {% if page.title %}
-  <title>{{ page.title | markdownify | strip_html | strip_newlines | escape_once }} &#8211; {{ site.title }}</title>
+  <title>
+    {{ page.title | markdownify | strip_html | strip_newlines | escape_once }}
+    &#8211; {{ site.title }}
+  </title>
   {% else %}
   <title>{{ site.title }}</title>
-  {% endif %}
-  {% if page.excerpt %}
-  <meta name="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+  {% endif %} {% if page.excerpt %}
+  <meta
+    name="description"
+    content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+  />
   {% else %}
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{{ site.description }}" />
+  {% endif %} {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ', ' }}" />
   {% endif %}
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
   <!-- Twitter Cards -->
-  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{% unless image contains 'http://' or image contains 'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ image }}">
-  {% else %}<meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="{{ site.url }}/images/gate-of-stormwind.jpg">{% endif %}
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  {% if page.excerpt %}
-  <meta name="twitter:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{%
+  unless image contains 'http://' or image contains 'https://' %}{% capture
+  image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ image }}" />
   {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:image"
+    content="{{ site.url }}/images/gate-of-stormwind.jpg"
+  />
   {% endif %}
-  {% if site.twitter %}<meta name="twitter:site" content="@{{ site.twitter }}">
-  <meta name="twitter:creator" content="@{{ site.twitter }}">{% endif %}
+  <meta
+    name="twitter:title"
+    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  />
+  {% if page.excerpt %}
+  <meta
+    name="twitter:description"
+    content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+  />
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}" />
+  {% endif %} {% if site.twitter %}
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter }}" />
+  {% endif %}
   <!-- Open Graph -->
-  <meta property="og:locale" content="{{ site.locale }}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:locale" content="{{ site.locale }}" />
+  <meta property="og:type" content="article" />
+  <meta
+    property="og:title"
+    content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+  />
   {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">
+  <meta
+    property="og:description"
+    content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}"
+  />
   {% else %}
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}" />
   {% endif %}
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:image" content="{{ site.url }}/images/gate-of-stormwind.jpg">
-  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
-  <link rel="canonical" href="{{ canonical }}">
+  <meta
+    property="og:url"
+    content="{{ page.url | replace:'index.html','' | prepend: site.url }}"
+  />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta
+    property="og:image"
+    content="{{ site.url }}/images/gate-of-stormwind.jpg"
+  />
+  {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html'
+  %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{%
+  endif %}{% endcapture %}
+  <link rel="canonical" href="{{ canonical }}" />
   <!-- Handheld -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Feed -->
   {% feed_meta %}
   <!-- Favicons -->
-  <link rel="shortcut icon" type="image/png" href="{{ site.url }}/favicon.png?v=2" />
+  <link
+    rel="shortcut icon"
+    type="image/png"
+    href="{{ site.url }}/favicon.png?v=2"
+  />
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico?v=2" />
   <!-- CSS -->
   <!--
     "Noto Sans CJK JP" licensed under the SIL Open Font License
     by https://www.google.com/get/noto/#sans-jpan
   -->
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
-  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/vendor/css/lightbox.min.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ site.url }}/assets/css/main.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{{ site.url }}/assets/vendor/css/lightbox.min.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css"
+  />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
   <!-- Left Block Image -->
-  {% if page.image %}
-    {% capture image %}{{ page.image }}{% endcapture %}
-    {% unless image contains 'http://' or image contains 'https://' %}
-      {% capture image %}{{ site.url }}/{{ image }}{% endcapture %}
-    {% endunless %}
-  {% else %}
-    {% if page.layout == 'home' %}
-      {% capture image %}{{ site.url }}/{{ site.background.homepage }}{% endcapture %}
-    {% else %}
-      {% capture image %}{{ site.url }}/{{ site.background.default-post }}{% endcapture %}
-    {% endif %}
-  {% endif %}
+  {% if page.image %} {% capture image %}{{ page.image }}{% endcapture %} {%
+  unless image contains 'http://' or image contains 'https://' %} {% capture
+  image %}{{ site.url }}/{{ image }}{% endcapture %} {% endunless %} {% else %}
+  {% if page.layout == 'home' %} {% capture image %}{{ site.url }}/{{
+  site.background.homepage }}{% endcapture %} {% else %} {% capture image %}{{
+  site.url }}/{{ site.background.default-post }}{% endcapture %} {% endif %} {%
+  endif %}
   <style type="text/css">
-    .block-left {background-image: url({{ image }});}
+    .block-left {
+      background-image: url("{{ image }}");
+    }
   </style>
 </head>
