@@ -62,7 +62,7 @@ canvas {
   cursor: pointer;
   z-index: 3;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: -19px;
     top: -2px;
@@ -80,7 +80,7 @@ canvas {
     border: 2px solid $gray;
     border-radius: 3px;
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: -19px;
       top: -2px;
@@ -116,7 +116,7 @@ canvas {
   border: 2px solid $gray;
   background: $white;
   &:before {
-    content: '';
+    content: "";
     width: 20px;
     height: 25px;
     position: absolute;
@@ -126,7 +126,7 @@ canvas {
     background: $white;
   }
   &:after {
-    content: '';
+    content: "";
     width: 20px;
     height: 25px;
     border: 2px solid $gray;
@@ -180,7 +180,7 @@ canvas {
   height: 100%;
   > li {
     display: inline-block;
-    width: calc(100%/3);
+    width: calc(100% / 3);
     background: $overlay-color;
     height: 50%;
     border: 5px solid $overlay-color;
@@ -188,13 +188,13 @@ canvas {
     vertical-align: top;
     float: left;
     background-size: cover !important;
-    &:nth-child(8n+1),
-    &:nth-child(8n+2) {
+    &:nth-child(8n + 1),
+    &:nth-child(8n + 2) {
       width: 50%;
       height: 70%;
     }
-    &:nth-child(8n+6) {
-      width: calc(100%/3 + 100%/3);
+    &:nth-child(8n + 6) {
+      width: calc(100% / 3 + 100% / 3);
       height: 100%;
     }
     a {
@@ -618,7 +618,7 @@ canvas {
     font-size: 25px;
     margin-bottom: 20px;
     &:after {
-      content: '';
+      content: "";
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
       -webkit-flex: 1;
@@ -641,7 +641,7 @@ canvas {
     &.reverse {
       margin-top: 40px;
       &:before {
-        content: '';
+        content: "";
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
         -webkit-flex: 1;
@@ -669,7 +669,7 @@ canvas {
   display: flex;
   align-items: center;
   &:before {
-    content: '';
+    content: "";
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -680,7 +680,7 @@ canvas {
     margin-right: 10px;
   }
   &:after {
-    content: '';
+    content: "";
     -webkit-box-flex: 1;
     -moz-box-flex: 1;
     -webkit-flex: 1;
@@ -786,13 +786,13 @@ canvas {
     height: 50% !important;
   }
   .content {
-    padding: 20px
+    padding: 20px;
   }
 }
 
 // entry meta used in tags and categories page
 .entry-meta {
-  font-size: .75rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   padding-left: 0;
   display: none; // hide header meta on small screens
@@ -828,7 +828,7 @@ canvas {
     }
   }
 }
-.entry-title > a{
+.entry-title > a {
   border: none !important;
 }
 .pagination {
@@ -866,10 +866,10 @@ canvas {
     }
     &.disabled {
       background-color: darken($white, 3%);
-      color:darken($white, 15%) !important;
+      color: darken($white, 15%) !important;
       &:hover {
         background-color: darken($white, 3%);
-        color:darken($white, 15%) !important;
+        color: darken($white, 15%) !important;
       }
     }
   }

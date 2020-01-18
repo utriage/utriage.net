@@ -32,11 +32,7 @@ layout: compress
           <li>
             <h2>
               <a href="{{ site.url }}{{ post.url }}" class="post-title">
-                <span
-                  >{{ post.title | markdownify | remove: "
-                  <p>" | remove: "</p>
-                  " }}</span
-                >
+                <span>{{ post.title }}</span>
               </a>
               <span class="date">{{ post.date | date: '%Y/%m/%d' }}</span>
             </h2>
