@@ -1,12 +1,15 @@
-{% capture permalink %}{{ site.url }}{{ page.url }}{% endcapture %}
-{% assign text_size = 130 - permalink.size - site.title.size %}
-{% if page.title %}
-  {% capture intent_text %}{{ page.title | truncate: text_size, '...' | append: ' | ' | append: site.title }} {{ permalink }}{% endcapture %}
-{% else %}
-  {% capture intent_text %}{{ site.title }} {{ permalink }}{% endcapture %}
-{% endif %}
-<a href="https://twitter.com/intent/tweet?text={{ intent_text | append: ' #ut_wow #wowjp' | url_encode }}" class="btn btn-default" title="Tweet!">
+{% capture permalink %}{{ site.url }}{{ page.url }}{% endcapture %} {% assign
+text_size = 130 - permalink.size - site.title.size %} {% if page.title %} {%
+capture intent_text %}{{ page.title | truncate: text_size, '...' | append: ' | '
+| append: site.title }} {{ permalink }}{% endcapture %} {% else %} {% capture
+intent_text %}{{ site.title }} {{ permalink }}{% endcapture %} {% endif %}
+<a
+  href="https://twitter.com/intent/tweet?text={{ intent_text | append: ' #ut_wow #wowjp' | url_encode }}"
+  class="btn btn-default"
+  title="Tweet!"
+>
   <i class="fa fa-fw fa-twitter" aria-hidden="true"></i><span> Tweet!</span>
 </a>
-<span class="countbubble">1</span>
-<div class="align-right"><a href="{{ permalink }}"><small>{{ permalink }}</small></a></div>
+<div class="align-right">
+  <a href="{{ permalink }}"><small>{{ permalink }}</small></a>
+</div>

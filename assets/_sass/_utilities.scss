@@ -63,7 +63,7 @@
       border-color: darken($yellow, 5%);
     }
   }
-  &_success{
+  &_success {
     background-color: lighten($green, 10%);
     &:hover {
       background-color: darken($green, 5%);
@@ -107,44 +107,9 @@ a.btn {
   color: lighten($black, 30%);
 }
 
-.countbubble
-{
-  position: relative;
-  border: #CCCCCC solid 1px;
-  vertical-align: middle;
-  &:after,
-  &:before {
-  	content: '';
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-width: 4px 4px 4px 0;
-    width: 0;
-    margin-top: -4px;
-    top: 50%;
-  }
-  &:after {
-    border-color: transparent #FFFFFF;
-    z-index: 1;
-    left: -4px;
-  }
-  &:before {
-    border-color: transparent #CCCCCC;
-    z-index: 0;
-    left: -5px;
-  }
-}
-.countbubble {
-  display: inline-block;
-  font-size: 0.8em;
-  padding: 0.5em 0.5em;
-  margin-bottom: 0.5em;
-  border-radius: 4px;
-}
-
 // notice
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  // override
+  margin: 2em 0 !important; // override
   padding: 1em;
   font-size: 0.9em !important;
   text-indent: initial; // override
@@ -172,7 +137,7 @@ a.btn {
     }
   }
   code {
-    background-color: mix(#fff, $notice-color, 95%)
+    background-color: mix(#fff, $notice-color, 95%);
   }
   ul {
     &:last-child {

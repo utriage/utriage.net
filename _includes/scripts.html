@@ -1,60 +1,82 @@
 <!-- Lighbox -->
-<script type="text/javascript" src="{{ site.url }}/assets/vendor/js/lightbox-plus-jquery.min.js"></script>
+<script
+  type="text/javascript"
+  src="{{ site.url }}/assets/vendor/js/lightbox-plus-jquery.min.js"
+></script>
 <script>
   lightbox.option({
-    'fadeDuration': 100,
-    'resizeDuration': 100,
-    'wrapAround': true
-  })
-</script>
-<!-- WowDB tooltips -->
-<script type="text/javascript" src="https://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
-<!-- Twitter Share Count -->
-{% capture permalink %}{{ site.public_url }}{{ page.url }}{% endcapture %}
-<script type="text/javascript">
-  $.getJSON("https://public.newsharecounts.com/count.json?url={{ permalink | url_encode }}", function(data) {
-    $('.countbubble').text(data.count);
+    fadeDuration: 100,
+    resizeDuration: 100,
+    wrapAround: true
   });
 </script>
+<!-- WowDB tooltips -->
+<script
+  type="text/javascript"
+  src="https://static-azeroth.cursecdn.com/current/js/syndication/tt.js"
+></script>
 <!-- Link preview -->
 <script type="text/javascript">
-  var previews = $('a.link_preview');
+  var previews = $("a.link_preview");
   jQuery.each(previews, function(i, obj) {
-    var href = $(obj).data('href');
-    var escaped = $(obj).data('escaped');
+    var href = $(obj).data("href");
+    var escaped = $(obj).data("escaped");
     if (href && escaped) {
-      $.getJSON('https://opengraph.io/api/1.0/site/' + escaped, function(data) {
+      $.getJSON("https://opengraph.io/api/1.0/site/" + escaped, function(data) {
         if (data.openGraph) {
-          var title = $('<a></a>').attr('href', href).text(data.openGraph.title);
+          var title = $("<a></a>")
+            .attr("href", href)
+            .text(data.openGraph.title);
           var image;
           if (data.openGraph.image) {
-            image = $('<img>')
-              .attr('src', data.openGraph.image)
-              .attr('alt', data.openGraph.title);
+            image = $("<img>")
+              .attr("src", data.openGraph.image)
+              .attr("alt", data.openGraph.title);
           } else {
-            image = '';
+            image = "";
           }
-          var desc = $('<p></p>').text(data.openGraph.description);
+          var desc = $("<p></p>").text(data.openGraph.description);
           $(obj).replaceWith(
-            $('<dl></dl>')
-              .addClass('link_preview')
-              .append($('<dt></dt>').append(title))
-              .append($('<dd></dd>')
-                .append($('<div></div>').append(image).append(desc))));
+            $("<dl></dl>")
+              .addClass("link_preview")
+              .append($("<dt></dt>").append(title))
+              .append(
+                $("<dd></dd>").append(
+                  $("<div></div>")
+                    .append(image)
+                    .append(desc)
+                )
+              )
+          );
         }
-      })
+      });
     }
-  })
+  });
 </script>
 {% if site.google-analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', '{{ site.google-analytics }}', 'auto');
-  ga('require', 'linkid', 'linkid.js');
-  ga('send', 'pageview');
+  (function(i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    (i[r] =
+      i[r] ||
+      function() {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date());
+    (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "//www.google-analytics.com/analytics.js",
+    "ga"
+  );
+  ga("create", "{{ site.google-analytics }}", "auto");
+  ga("require", "linkid", "linkid.js");
+  ga("send", "pageview");
 </script>
 {% endif %}
