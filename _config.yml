@@ -41,27 +41,26 @@ plugins:
   - jekyll-gist
 
 # Exclude list
-include: [_pages]
+include:
+  - _pages
 exclude:
-  [
-    README.md,
-    Gemfile,
-    Gemfile.lock,
-    _site,
-    src,
-    vendor,
-    CNAME,
-    LICENSE,
-    Rakefile,
-    .sass-cache,
-    .DS_Store,
-    .editorconfig,
-    .tool-versions,
-    dev_start,
-    win_dev_start.bat,
-  ]
+  - README.md,
+  - Gemfile,
+  - Gemfile.lock,
+  - _site,
+  - src,
+  - vendor,
+  - CNAME,
+  - LICENSE,
+  - Rakefile,
+  - .sass-cache,
+  - .DS_Store,
+  - .editorconfig,
+  - .tool-versions,
+  - dev_start,
+  - win_dev_start.bat,
 
-# Default front amtters
+# Default frontmatters
 defaults:
   - scope:
       path: "_posts"
