@@ -44,21 +44,20 @@ plugins:
 include:
   - _pages
 exclude:
-  - README.md,
-  - Gemfile,
-  - Gemfile.lock,
-  - _site,
-  - src,
-  - vendor,
-  - CNAME,
-  - LICENSE,
-  - Rakefile,
-  - .sass-cache,
-  - .DS_Store,
-  - .editorconfig,
-  - .tool-versions,
-  - dev_start,
-  - win_dev_start.bat,
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - src
+  - vendor
+  - CNAME
+  - LICENSE
+  - Rakefile
+  - .sass-cache
+  - .DS_Store
+  - .editorconfig
+  - .tool-versions
+  - Makefile
 
 # Default frontmatters
 defaults:
