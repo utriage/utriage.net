@@ -27,7 +27,7 @@ Warlords of Draenor 拡張とともに発足し、現在は Heroic Raid を開�
   - 8.0 - **Heroic Uldir & Glory clear**
   - 8.1 - **Heroic Battle of Dazzr'alor & Glory clear**
   - 8.2 - **Heroic Eternal Palace & Glory clear**
-  - 8.3 - Heroic Ny'alotha, the Waking City soon!
+  - 8.3 - **Heroic Ny'alotha, the Waking City clear**
 
 US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
@@ -115,6 +115,6 @@ AddOn:
 テーマは[Halve](https://github.com/TaylanTatli/Halve)を元に改造したものです。パッと見で気に入って使っているので、実用性は二の次！
 
 ソースは[こちら](https://github.com/ymtszw/utriage)にあります。記事を書きたい場合は PR してください！
-……と言いたいところですが流石に面倒な人のほうが多い思うので、適当にテキストで書いて Gadagarr に送ってください。整形して載せます。
+……と言いたいところですが流石に面倒な人のほうが多い思うので、適当にテキストで書いて Gada に送ってください。整形して載せます。
 
 - [ちょっとだけ markdown の紹介](/how-to-post)
