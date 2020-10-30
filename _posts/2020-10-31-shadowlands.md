@@ -10,7 +10,7 @@ tag:
 
 ## 2020
 
-![](/images/heroic_nzoth.png)
+![](/images/heroic_nzoth.jpg)
 
 はい。
 
