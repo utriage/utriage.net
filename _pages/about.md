@@ -127,17 +127,17 @@ AddOn:
   - Wrath of the Lich King
     - 3.3.5 - **Heroic Ruby Sanctum (10) clear**（2010/09）, **Normal Ruby Sanctum (25) clear**（2010/07）
       - おまけ1ボスRaidの割にHalionは強ボスだった。Heroic 25mで時間切れ
-    - 3.3 - **Heroic Icecrown Citadel (10) clear & Glory clear**（2010/xx）, **Heroic Icecrown Citadel (25) 11/12 & Glory clear**（2010/08）
+    - 3.3 - **Heroic Icecrown Citadel (10) clear & Glory clear**（2010/09）, **Heroic Icecrown Citadel (25) 11/12 & Glory clear**（2010/08）
       - Gadaが参加したのがこのraidからでした。Heroic 25m tryの途中からなので、Achieveで正しく日付がわかるのはここまでです
       - Heroic Sindragosa (25)までは食えたが、LKはラストフェイズまでで時間切れ
       - Raidフォーマットがほぼ確定し、多くのギルドがサーバ内ランクを明確に把握できるようになり始めたのがこの頃か
     - 3.2 - **Heroic Trial of the Grand Crusader (10) clear**（2009/09）, **Heroic Trial of the Grand Crusader (25) 4(3だったかも？)/5**（2009/10）
       - ハードモードとしての"Heroic"が正式に分離された最初のraidでした。10N/25N/10H/25Hと4ID存在し、スケジュールが大変そうだった
       - GadaがWoWを始めたのはこの時期でした
-    - 3.1 - **Ulduar (10) clear & Glory/Hardmode clear**（2009/xx）, **Ulduar (25) ??/14**（2009/xx）
-      - 10mは確かtryで0 lightまでクリアしていたような記憶
+    - 3.1 - **Ulduar (10) clear & Glory clear**（2009/xx）, **Ulduar (25) ??/14**（2009/xx）
+      - 10mでのToGCリリース前までのtry記録はFiirefighter, 1 lightあたりまで。
       - FrostmourneサーバでRaidをやっていたメンバーが少しずつ移住してくる流れができ、その後のMKD/UTの屋台骨になりました。
-      - 人が増えてきてから徐々に25mの開催を開始していますが、安定開催はできておらず、10mメインだったそうです。10mを2ライン（tryA/B）立てつつ、できる範囲で25mもやっていました
+      - 人が増えてきて、同サーバの別ギルドと合同しつつ、徐々に25mの開催を開始しました。10mを2ライン（tryA/B）立てつつ、できる範囲で25mもやっていました
     - 3.0
       - **Naxxarams (10) clear**（2009/01）
       - **Eye of Eternity (10) clear**（2009/02）
