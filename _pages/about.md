@@ -123,7 +123,7 @@ AddOn:
       - **Heroic Blackwing Descent (25) clear**（2011/06）
         - Nefarianをやはりギリギリ倒した。溶岩遊泳の思い出
       - **Heroic Bastion of Twilight (25) 2/5**（2011/06）
-        - Conclave, Cho'gall, Sinestraと強敵が多く、3インスタンスだったのもあって食いきれなかった
+        - Council, Cho'gall, Sinestraと強敵が多く、3インスタンスだったのもあって食いきれなかった
   - Wrath of the Lich King
     - 3.3.5 - **Heroic Ruby Sanctum (10) clear**（2010/09）, **Normal Ruby Sanctum (25) clear**（2010/07）
       - おまけ1ボスRaidの割にHalionは強ボスだった。Heroic 25mで時間切れ
