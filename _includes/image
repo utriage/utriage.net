@@ -1,0 +1,1 @@
+{% assign src = include.src %}[![]({{ src }})]({{ src }}){:data-lightbox="page"}
