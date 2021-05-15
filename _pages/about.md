@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2021-02-28"
+date: "2021-05-15"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -153,11 +153,11 @@ AddOn:
 
 2016年から運用開始。それまで使ってたGuildlaunchのホスティングサイトから切り替え。
 
-静的サイトジェネレータ[Jekyll](https://jekyllrb.com/)を使用し、Github pagesで公開しています。
+静的サイトジェネレータ[Jekyll](https://jekyllrb.com/)を使用し、~~Github pagesで公開しています。~~（2021/05/15）Cloudflare Pagesにドメイン管理と併せて移行しました。
 
 テーマは[Halve](https://github.com/TaylanTatli/Halve)を元に改造したものです。パッと見で気に入って使っているので、実用性は二の次！
 
-ソースは[こちら](https://github.com/ymtszw/utriage)にあります。記事を書きたい場合はPRしてください！
+ソースは[こちら](https://github.com/utriage/utriage.github.io)にあります。記事を書きたい場合はPRしてください！
 ……と言いたいところですが流石に面倒な人のほうが多い思うので、適当にテキストで書いてGadaに送ってください。整形して載せます。
 
 - [ちょっとだけ markdown の紹介](/how-to-post)
