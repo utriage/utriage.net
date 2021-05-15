@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2020-10-31"
+date: "2021-02-28"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -19,8 +19,8 @@ US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
 Shadowlands 拡張でも Heroic Raid を開催します。
 
-参加希望の方はゲーム内で**Gada**あるいはギルドメンバに whisper、
-もしくは Twitter で[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DM ください。
+参加希望の方はゲーム内で**Gada**あるいはギルドメンバーにwhisper、
+もしくはTwitterで[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DMください。
 
 - 参加条件
   - 日本語の説明を聞いて理解できる
@@ -78,7 +78,7 @@ AddOn:
 
 
 - Shadowlands
-  - 9.0 - **Heroic Castle Nathria 開催中**
+  - 9.0 - **Heroic Castle Nathria & Glory clear** (2021/01)
 - Battle for Azeroth
   - 8.3 - **Heroic Ny'alotha, the Waking City & Glory clear**（2020/02）
   - 8.2 - **Heroic Eternal Palace & Glory clear**（2019/07）
