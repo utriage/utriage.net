@@ -10,8 +10,8 @@ build:
 
 .PHONY: serve
 serve:
-	bundle exec jekyll serve --incremental
+	bundle exec jekyll serve --incremental --livereload --future
 
-.PHONY: serve.nowatch
-serve.nowatch:
-	bundle exec jekyll serve --no-watch --livereload --future
+.PHONY: serve.polling
+serve.polling:
+	bundle exec jekyll serve --incremental --livereload --future --force_polling

@@ -8,10 +8,10 @@
 
 World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェブサイトソースコードです。
 
-* Github Pagesを使って公開しています(タダ！)。
+* ~~Github~~ Cloudflare Pagesを使って公開しています(タダ！)。
 * 静的サイトジェネレータ[Jekyll](http://jekyllrb.com/)と、
   少し手を加えた[Halve theme](https://github.com/TaylanTatli/Halve)を使用しています。
-* 管理者は[ymtszw](https://github.com/ymtszw) a.k.a. [Gadagarr](https://twitter.com/gada_twt)です。
+* 管理者は[ymtszw](https://github.com/ymtszw) a.k.a. [Gada](https://twitter.com/gada_twt)です。
 
 ## Static Site with Jekyll
 
@@ -31,12 +31,12 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 ## How To
 
 * （Linuxとかmacとか前提）
-* GitHub Pagesの対応Rubyバージョンをインストール
-  * https://pages.github.com/versions/
+* Cloudflare Pagesの対応Rubyバージョンをインストール
+  * https://developers.cloudflare.com/pages/platform/build-configuration
   * 使ってるなら`asdf install`
 * `make`
 * `make serve`
-  * `--watch`が効かないWSLなどの環境なら`make serve.nowatch`
+  * `--watch`が効かないWSLなどの環境なら`make serve.polling`
 
 ## Remarks
 * [Jekyll](http://jekyllrb.com/)
