@@ -1,8 +1,7 @@
 # Site
 title: Ultimate Triage
 description: World of Warcraft Guild in US-Proudmoore (A)
-# url: https://www.utriage.net
-# public_url: https://www.utriage.net # For several force-use-public-url purposes
+url: https://utriage.net
 logo: logo.png
 locale: ja_JP
 google-analytics: UA-81643772-1
