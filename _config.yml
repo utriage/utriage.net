@@ -16,6 +16,7 @@ max_related_posts: 4
 
 # Jekyll
 permalink: /:title/
+future: true
 markdown: kramdown
 highlighter: rouge
 kramdown:
