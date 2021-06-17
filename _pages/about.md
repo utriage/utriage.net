@@ -2,7 +2,7 @@
 title: "ギルド紹介"
 date: "2021-05-15"
 excerpt: "ギルドUltimate Triageについて"
-permalink: /about/
+permalink: /about.html
 image: "images/glory_of_the_uldir_raider.jpg"
 ---
 

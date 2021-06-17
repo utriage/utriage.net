@@ -1,7 +1,7 @@
 ---
 title: アーカイブ
 excerpt: "タグ別記事アーカイブ"
-permalink: /tags/
+permalink: /tags.html
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
