@@ -1,12 +1,12 @@
 ---
 title: "ギルド紹介"
-date: "2021-05-15"
+date: "2021-09-08"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about.html
 image: "images/glory_of_the_uldir_raider.jpg"
 ---
 
-[![Ultimate Triage](/images/utriage.jpg)](/images/utriage.jpg){:data-lightbox="banner"}
+{% image src="/image/utriage.jpg" %}
 
 ## Ultimate Triage
 
@@ -49,9 +49,8 @@ BfA から Loot は**Personal Loot**のみになりました。
 トレードできる場合はチャットにアイテムを貼って下さい。Rollにかけます。売らないでね！
 誰も欲しい人がいない場合、Enchanterに渡して下さい。
 
-Personal Lootの場合、BoEも個人単位でドロップしますが、これはrollとします。誰も使用しない場合はGBankに入れてください。
-GBankのBoEはギルドメンバはAH相場の半額で買ってOKです(Alt用でも)。しばらく待って誰も買わないようならAHに出し、
-GBank資金(修理費+可能な限り消耗品材料費)にします。
+Personal Lootの場合、BoEも個人単位でドロップしますが、これは**Main Specで使う場合のみ**rollとします。誰も使用しない場合はGBankに入れてください。
+GBankのBoEはAHに出し、GBank資金（修理費＋可能な限り消耗品材料費）にします。資金が潤沢な時期や、あまり売れなくなってきた時期はOff specやAlt用に購入してもOK（その場合AHの相場の半額で）
 
 ### その他
 
@@ -73,11 +72,13 @@ AddOn:
 - Boss mod (こだわりがなければ[DBM](https://mods.curse.com/addons/wow/deadly-boss-mods)。基本的には必須)
 - [WeakAuras 2](https://mods.curse.com/addons/wow/weakauras-2) (推奨)
   - 最低限の警告をまとめたセットを作って配布しますので、自分で作れなくても OK
+  - 最近はあんまり作ってないが、だいたいDBMがあればなんとかなります
 
 ## Guild History
 
 
 - Shadowlands
+  - 9.1 - **Heroic Sanctum of Domination & Glory clear** (2021/08)
   - 9.0 - **Heroic Castle Nathria & Glory clear** (2021/01)
 - Battle for Azeroth
   - 8.3 - **Heroic Ny'alotha, the Waking City & Glory clear**（2020/02）
