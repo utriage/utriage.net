@@ -66,7 +66,9 @@ Farm期間中 (週2日, 計5時間)
 
 HeroicまでのRaidは人数変動が効くので、そこそこゆるく参加・欠席OKです。TankとHealが揃って10人以上いれば開催します。なのでTank/Healできる方は歓迎です。復帰も待ってます！
 
-## サルベージ
+-----
+
+## サルベージ時追加コンテンツ
 
 この記事でMythic終了の発表でした。Mythic続けたかった人はCAVAG（Horde）やDivine Windなどに移籍してた記憶（が、どちらも追ってMythicを終了したので、Legionでけっこう多くの人と再会した。）
 
@@ -76,13 +78,19 @@ HeroicまでのRaidは人数変動が効くので、そこそこゆるく参加�
 
 {% include image src="/images/mythic_kromog_achieve.jpg" %}
 
-### Mythic Flamebender Achieve
+### Mythic Flamebender Achieve/Akisaya動画
 
 {% include image src="/images/mythic_flamebender_achieve.jpg" %}
 
-### Mythic Hans'gar and Franzok Achieve
+Akisayaさんの動画まだYouTubeに残ってた。
+
+{% include youtube_embed.html src="https://www.youtube.com/watch?v=ptN8MuHQebY" %}
+
+### Mythic Hans'gar and Franzok Achieve/Akisaya動画
 
 {% include image src="/images/mythic_hans_franz_achieve.jpg" %}
+
+{% include youtube_embed.html src="https://www.youtube.com/watch?v=gielB44NiY0" %}
 
 ### Mythic Ko'ragh
 
