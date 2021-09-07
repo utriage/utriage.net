@@ -11,5 +11,11 @@
 		"prefix": "image",
 		"body": [ "{% include image src=\"/images/$1\" %}" ],
 		"description": "Insert image using _includes/image"
+	},
+	"Insert YouTube player [Liquid Include]": {
+		"scope": "markdown,html",
+		"prefix": "youtube",
+		"body": [ "{% include youtube_embed.html src=\"$1\" %}" ],
+		"description": "Insert YouTube player using _includes/youtube_embed.html"
 	}
 }
