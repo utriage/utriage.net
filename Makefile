@@ -6,12 +6,12 @@ all:
 
 .PHONY: build
 build:
-	bundle exec jekyll build --incremental
+	bundle exec jekyll build
 
 .PHONY: serve
 serve:
-	bundle exec jekyll serve --incremental --livereload --future
+	bundle exec jekyll serve --livereload --future
 
 .PHONY: serve.polling
 serve.polling:
-	bundle exec jekyll serve --incremental --livereload --future --force_polling
+	bundle exec jekyll serve --livereload --future --force_polling
