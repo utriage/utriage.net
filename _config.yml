@@ -59,6 +59,7 @@ exclude:
   - .editorconfig
   - .tool-versions
   - Makefile
+  - .vscode
 
 # Default frontmatters
 defaults:
