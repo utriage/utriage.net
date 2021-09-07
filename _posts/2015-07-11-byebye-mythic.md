@@ -92,10 +92,12 @@ Akisayaさんの動画まだYouTubeに残ってた。
 
 {% include youtube_embed.html src="https://www.youtube.com/watch?v=gielB44NiY0" %}
 
-### Mythic Ko'ragh
+### Mythic Ko'ragh / Tectus
 
-Kill間際まで進めてたけど時間配分の関係でBlackrock FoundryオープンとともにスキップになったKo'raghをこのとき戻ってkillしてた。
+Kill間際まで進めてたけど時間配分の関係でBlackrock FoundryオープンとともにスキップになったKo'raghと、tryしてなかったTectusをこのとき戻ってkillしてた。
 
 ラスボスのImperatorはスクリプトがかなり難しくなることがわかってたので、結局WoDの間はやりに戻りませんでした。
 
 {% include image src="/images/mythic_koragh_achieve.jpg" %}
+
+{% include image src="/images/mythic_tectus_achieve.jpg" %}
