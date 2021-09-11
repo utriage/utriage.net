@@ -28,6 +28,10 @@ Mythicまで含めて温めの難易度という評価の模様。
 その証拠にHeroic OdynはいきなりENのすべてのボスより難しく(感想多数)、かつ面白いボスでした。
 11/21にKill成功。
 
+追記：Akisaya動画
+
+{% include youtube_embed.html src="https://www.youtube.com/watch?v=OL-khA2bHIU" %}
+
 [![Helya](/images/heroic_helya.jpg)](/images/heroic_helya.jpg){:data-lightbox="Kill Shots"}
 
 そしてラスボスのHeroic Helyaもまた難敵で、最後は絞り出すようなKillでした。12/11にクリア。GJ!!
