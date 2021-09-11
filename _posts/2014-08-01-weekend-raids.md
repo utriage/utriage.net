@@ -38,3 +38,9 @@ tag:
 今は亡き前王と肩を並べて戦えるボスがいました。
 
 {% include image src="/images/galakras.jpg" %}
+
+また、この頃（2014年6月）に、MKDの最後のTryチームが旧Heroic 10m Garroshを無事クリアし、Cutting Edgeアチーブが導入されてから（Will of the Emperor以来）2つ目を無事達成していました。
+
+{% include youtube_embed.html src="https://www.youtube.com/watch?v=gIu75XX0OFk" %}
+
+SoO中退した人もSpecial Thanksに入ってた！（7年越しに気づいた）

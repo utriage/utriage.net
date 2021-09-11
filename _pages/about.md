@@ -6,7 +6,7 @@ permalink: /about.html
 image: "images/glory_of_the_uldir_raider.jpg"
 ---
 
-{% include image src="/image/utriage.jpg" %}
+{% include image src="/images/utriage.jpg" %}
 
 ## Ultimate Triage
 
