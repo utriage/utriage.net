@@ -23,9 +23,11 @@
   <meta name="keywords" content="{{ page.tags | join: ', ' }}" />
   {% endif %}
   <!-- Twitter Cards -->
-  {% if page.image %}{% capture image %}{{ page.image }}{% endcapture %}{%
-  unless image contains 'http://' or image contains 'https://' %}{% capture
-  image %}{{ site.url }}/{{ image }}{% endcapture %}{% endunless %}
+  {% if page.image %}{% capture image %}{% if page.image | slice: 0 == '/' %}{{
+  page.image | slice: 1, page.image.size }}{% else %}{{ page.image }}{% endif
+  %}{% endcapture %}{% unless image contains 'http://' or image contains
+  'https://' %}{% capture image %}{{ site.url }}/{{ image }}{% endcapture %}{%
+  endunless %}
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="{{ image }}" />
   {% else %}

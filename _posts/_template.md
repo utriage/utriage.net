@@ -2,7 +2,7 @@
 title:   title
 excerpt: description
 author:  author
-#image:   "images/dalaran.jpg" # header image
+# image:   /images/dalaran.jpg
 tag:
 - blog
 # - raid
