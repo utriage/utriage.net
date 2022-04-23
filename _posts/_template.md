@@ -1,7 +1,7 @@
 ---
 title:   title
 excerpt: description
-author:  author
+author:  Gada
 # image:   /images/dalaran.jpg
 tag:
 - blog
