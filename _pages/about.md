@@ -69,7 +69,7 @@ GBankの品を使いたい場合はキャラをギルドに所属させてくだ
 
 AddOn:
 
-- [Mythic Raid Tools](https://addons.wago.io/addons/method-raid-tools) (**必須**)
+- [Method Raid Tools](https://addons.wago.io/addons/method-raid-tools) (**必須**)
 - Boss mod (こだわりがなければ[DBM](https://www.warcrafttavern.com/dbm/)。基本的には必須)
 - [WeakAuras](https://addons.wago.io/addons/weakauras) (推奨)
   - 最低限の警告をまとめたセットを作って配布しますので、自分で作れなくても OK
