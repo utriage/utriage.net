@@ -37,6 +37,7 @@ Heroic RaidはWoDから10人以上で人数自由というフォーマットに�
 Heroicラスボスをアクティブメンバ全員がクリアし、メタアチーブ(Glory)を欲しい人全員がクリアしたら一旦区切りをつけます。
 Farmは興味が無いメンバも多いので、基本的には数週間Farm runしたのち、**次のTierがオープンするまで休止期間**とします。
 (GearUp を続けたい人は 5man Mythic+があるので、ちょうどいい感じになりました)
+
 休止期間中は他ギルド参加 or ヘルプどんどん行ってください。
 次のRaidのオープンが近い場合は、そのまま継続して次Raidに備えます。
 
@@ -68,9 +69,9 @@ GBankの品を使いたい場合はキャラをギルドに所属させてくだ
 
 AddOn:
 
-- [Exorsus Raid Tools](https://mods.curse.com/addons/wow/exorsus-raid-tools) (**必須**)
-- Boss mod (こだわりがなければ[DBM](https://mods.curse.com/addons/wow/deadly-boss-mods)。基本的には必須)
-- [WeakAuras 2](https://mods.curse.com/addons/wow/weakauras-2) (推奨)
+- [Mythic Raid Tools](https://addons.wago.io/addons/method-raid-tools) (**必須**)
+- Boss mod (こだわりがなければ[DBM](https://www.warcrafttavern.com/dbm/)。基本的には必須)
+- [WeakAuras](https://addons.wago.io/addons/weakauras) (推奨)
   - 最低限の警告をまとめたセットを作って配布しますので、自分で作れなくても OK
   - 最近はあんまり作ってないが、だいたいDBMがあればなんとかなります
 
