@@ -15,7 +15,7 @@ background:
 max_related_posts: 4
 
 # Jekyll
-permalink: /:title/
+permalink: /:title
 future: true
 markdown: kramdown
 highlighter: rouge
@@ -24,7 +24,6 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: false
 sass:
   sass_dir: assets/_sass
   style: compressed

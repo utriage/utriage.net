@@ -76,7 +76,6 @@ AddOn:
 
 ## Guild History
 
-
 - Shadowlands
   - 9.2 - **Heroic Sepulcher of the First Ones clear** (2022/05)
   - 9.1 - **Heroic Sanctum of Domination & Glory clear** (2021/08)
