@@ -10,14 +10,14 @@ image: "images/glory_of_the_uldir_raider.jpg"
 
 ## Ultimate Triage
 
-[Ultimate Triage (UT) ](https://worldofwarcraft.com/en-us/guild/us/proudmoore/ultimate-triage)は、US-Proudmoore (Alliance)の日本語ギルドです。
-Warlords of Draenor 拡張とともに発足し、現在は Heroic Raid を開催しています。
+[Ultimate Triage (UT)](https://worldofwarcraft.com/en-us/guild/us/proudmoore/ultimate-triage)は、US-Proudmoore (Alliance)の日本語ギルドです。
+Warlords of Draenor拡張とともに発足し、現在は Heroic Raid を開催しています。
 
 US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
 ## Raiding
 
-Shadowlands 拡張でも Heroic Raid を開催します。
+Shadowlands 拡張でもHeroic Raidを開催します。
 
 参加希望の方はゲーム内で**Gada**あるいはギルドメンバーにwhisper、
 もしくはTwitterで[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DMください。
@@ -28,14 +28,14 @@ Shadowlands 拡張でも Heroic Raid を開催します。
   - お荷物にならないくらいの装備を揃えとく
   - 拡張ごとに、中心的な成長要素／アイテムのクエストチェーンは各自で必ず進める
 
-Heroic Raid は WoD から 10 人以上で人数自由というフォーマットになったので、出席できないことでメンバに迷惑がかかってしまう、という状況はほぼなくなりました（Tank できる人が誰もいない状況を除けば）
+Heroic RaidはWoDから10人以上で人数自由というフォーマットになったので、出席できないことでメンバに迷惑がかかってしまう、という状況はほぼなくなりました（Tankできる人が誰もいない状況を除けば）
 
 ### Schedule
 
 **新コンテンツTry中は金・土・日の週3日、JST22時開始・24時終了、2時間x3の週6時間**です。
 
 Heroicラスボスをアクティブメンバ全員がクリアし、メタアチーブ(Glory)を欲しい人全員がクリアしたら一旦区切りをつけます。
-Farmは興味が無いメンバも多いので、基本的には**次のTierがオープンするまで休止期間**とします。
+Farmは興味が無いメンバも多いので、基本的には数週間Farm runしたのち、**次のTierがオープンするまで休止期間**とします。
 (GearUp を続けたい人は 5man Mythic+があるので、ちょうどいい感じになりました)
 休止期間中は他ギルド参加 or ヘルプどんどん行ってください。
 次のRaidのオープンが近い場合は、そのまま継続して次Raidに備えます。
@@ -78,6 +78,7 @@ AddOn:
 
 
 - Shadowlands
+  - 9.2 - **Heroic Sepulcher of the First Ones clear** (2022/05)
   - 9.1 - **Heroic Sanctum of Domination & Glory clear** (2021/08)
   - 9.0 - **Heroic Castle Nathria & Glory clear** (2021/01)
 - Battle for Azeroth
