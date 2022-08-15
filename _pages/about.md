@@ -78,7 +78,9 @@ AddOn:
 ## Guild History
 
 - Shadowlands
-  - 9.2 - **Heroic Sepulcher of the First Ones clear** (2022/05)
+  - 9.2.5 - クロスギルドで[Fated Raid](https://www.wowhead.com/guides/fated-raid-affixes-shadowlands-season-4)開催 (2022/08)
+    - UT単独だと安定して人足りるか微妙だったので募集してみたところ、[結構集まってくれました](https://twitter.com/_/status/1555572862840610816)
+  - 9.2 - **Heroic Sepulcher of the First Ones & Glory clear** (2022/05)
   - 9.1 - **Heroic Sanctum of Domination & Glory clear** (2021/08)
   - 9.0 - **Heroic Castle Nathria & Glory clear** (2021/01)
 - Battle for Azeroth
