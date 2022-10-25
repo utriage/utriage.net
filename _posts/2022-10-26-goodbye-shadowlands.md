@@ -38,6 +38,8 @@ Classicは言わずもがな。
 
 Shadowlandsも終わり、ということは死後の世界とはおさらばです。Azerothに帰ってドラゴン島を探検しよう。
 
+それにしても驚きの年内リリース有言実行だった。[そこそこの規模のデベロッパを買収してチームが充実した](https://investor.activision.com/news-releases/news-release-details/blizzard-entertainment-acquires-boston-based-studio-proletariat)というのは伊達ではなかった模様。買収したのはサ終したSpellbreakの会社でしたが、そもそも数年前からWoW部門で外注していたらしいですね。
+
 今回の拡張は時間軸的にはBfA => Shadowlandsの一連の出来事からは数年間を開けており、AzerothとDragonflight (Dragon Aspects)の再生と探検が主題とのこと。ここんとこの拡張の例に倣ってラスボスはわからない状態からなんとなく始まる感じですが、少なくともDragonridingはおもろそうだし、借り物の力を脱却して充実したTalent Treeが返ってくるのを楽しみましょ～
 
 **本日Pre-patch!!!**
