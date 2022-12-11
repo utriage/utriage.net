@@ -1,8 +1,8 @@
 ---
 title: "ギルド紹介"
-date: "2021-09-08"
+date: "2022-12-11"
 excerpt: "ギルドUltimate Triageについて"
-permalink: /about.html
+permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
 ---
 
@@ -17,7 +17,7 @@ US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
 ## Raiding
 
-Shadowlands 拡張でもHeroic Raidを開催します。
+Dragonflight拡張でもHeroic Raidを開催します。
 
 参加希望の方はゲーム内で**Gada**あるいはギルドメンバーにwhisper、
 もしくはTwitterで[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DMください。
@@ -46,11 +46,13 @@ Heroicが完了したら徐々に週2日→週1日と減らしていきます。
 
 ### Loot
 
-BfA から Loot は**Personal Loot**のみになりました。
-トレードできる場合はチャットにアイテムを貼って下さい。Rollにかけます。売らないでね！
-誰も欲しい人がいない場合、Enchanterに渡して下さい。
+BfAからしばらくLoot方式はPersonal Lootのみでしたが、**DragonflightのVault of the Incarnatesでは実験的にGroup Lootが復活**します。
+メンバー間でのトレードのitem level制限もなくすとのことなので、間違ってrollしてしまったり、rollしたあとで思ったより強くなかったことに気づいたりしても交換可能です。ということで、**MSのUpgradeならNeed, OS用など低優先度で欲しいならGreed, それ以外はPass**してください。
+Group Lootだと、完全に誰も欲しい人がいなかった場合、ボスの死体にモノが残ると思います。そうなったら適当に拾ってEnchanterに渡すか店売りします。
 
-Personal Lootの場合、BoEも個人単位でドロップしますが、これは**Main Specで使う場合のみ**rollとします。誰も使用しない場合はGBankに入れてください。
+<https://www.mmo-champion.com/content/10913-Changes-Experiments-to-Raid-Rewards-in-Dragonflight-Season-1>
+
+BoEは**Main Specで使う場合のみ**rollとします。誰も使用しない場合はGBankに入れてください。
 GBankのBoEはAHに出し、GBank資金（修理費＋可能な限り消耗品材料費）にします。資金が潤沢な時期や、あまり売れなくなってきた時期はOff specやAlt用に購入してもOK（その場合AHの相場の半額で）
 
 ### その他
@@ -77,6 +79,7 @@ AddOn:
 
 ## Guild History
 
+- Dragonflight
 - Shadowlands
   - 9.2.5 - クロスギルドで[Fated Raid](https://www.wowhead.com/guides/fated-raid-affixes-shadowlands-season-4)開催 (2022/08)
     - UT単独だと安定して人足りるか微妙だったので募集してみたところ、[結構集まってくれました](https://twitter.com/_/status/1555572862840610816)
