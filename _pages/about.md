@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2022-12-11"
+date: "2023-12-30"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -46,8 +46,8 @@ Heroicが完了したら徐々に週2日→週1日と減らしていきます。
 
 ### Loot
 
-BfAからしばらくLoot方式はPersonal Lootのみでしたが、**DragonflightのVault of the Incarnatesでは実験的にGroup Lootが復活**します。
-メンバー間でのトレードのitem level制限もなくすとのことなので、間違ってrollしてしまったり、rollしたあとで思ったより強くなかったことに気づいたりしても交換可能です。ということで、**MSのUpgradeならNeed, OS用など低優先度で欲しいならGreed, それ以外はPass**してください。
+BfAからしばらくLoot方式はPersonal Lootのみでしたが、**DragonflightからGroup Lootが復活**しました。Loot specを尊重したrollになっているので、OffspecでもNeedしてOKです。
+メンバー間でのトレードのitem level制限もなくすとのことなので、間違ってrollしてしまったり、rollしたあとで思ったより強くなかったことに気づいたりしても交換可能です。
 Group Lootだと、完全に誰も欲しい人がいなかった場合、ボスの死体にモノが残ると思います。そうなったら適当に拾ってEnchanterに渡すか店売りします。
 
 <https://www.mmo-champion.com/content/10913-Changes-Experiments-to-Raid-Rewards-in-Dragonflight-Season-1>
@@ -58,7 +58,7 @@ GBankのBoEはAHに出し、GBank資金（修理費＋可能な限り消耗品�
 ### その他
 
 メンバ・スケジュール管理はin-gameのギルドランクとカレンダーを使います。
-クロス鯖でのInviteもBfAでできるようになったと思うので、他鯖においているキャラでも参加可能。
+クロス鯖/陣営でのInviteもBfAでできるようになったと思うので、他鯖においているキャラでも参加可能。Inviteを受けるために別鯖の場合は"UT&Friends"コミュニティに入っておいてください。
 
 GBankからお金をだして、Flask/Pot/Foodは可能な限り提供します。
 GBankの品を使いたい場合はキャラをギルドに所属させてください。
@@ -79,7 +79,12 @@ AddOn:
 
 ## Guild History
 
+- The War Within
+  - To be continued...
 - Dragonflight
+  - 10.2 - **Heroic Amirdrassil, the Dream's Hope & Glory clear** (2023/12)
+  - 10.1 - **Heroic Aberrus, the Shadowed Crucible & Glory clear** (2023/06)
+  - 10.0 - **Heroic Vault of the Incarnates & Glory clear** (2023/01)
 - Shadowlands
   - 9.2.5 - クロスギルドで[Fated Raid](https://www.wowhead.com/guides/fated-raid-affixes-shadowlands-season-4)開催 (2022/08)
     - UT単独だと安定して人足りるか微妙だったので募集してみたところ、[結構集まってくれました](https://twitter.com/_/status/1555572862840610816)
