@@ -31,14 +31,14 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 
 - （Linuxとかmacとか前提）
 - Cloudflare Pagesの対応Rubyバージョンをインストール
-  - <https://developers.cloudflare.com/pages/platform/build-configuration>
-  - 使ってるなら`asdf install`
+  - <https://developers.cloudflare.com/pages/configuration/language-support-and-tools/>
+  - 使ってるなら`rtx install`
 - `make`
 - `make serve`
   - `--watch`が効かないWSLなどの環境なら`make serve.polling`
 
 ## Remarks
 
-* [Jekyll](http://jekyllrb.com/)
+- [Jekyll](http://jekyllrb.com/)
 - [Halve](https://github.com/TaylanTatli/Halve)
 - [Noto Sans CJK JP](https://www.google.com/get/noto/#sans-jpan)
