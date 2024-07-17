@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2023-12-30"
+date: "2024-07-18"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -17,9 +17,9 @@ US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
 ## Raiding
 
-Dragonflight拡張でもHeroic Raidを開催します。
+The War Within拡張でもHeroic Raidを開催します。
 
-参加希望の方はゲーム内で**Gada**あるいはギルドメンバーにwhisper、
+参加希望の方はゲーム内やDiscordで**Gada**あるいはギルドメンバーにwhisper、
 もしくはTwitterで[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DMください。
 
 - 参加条件
@@ -35,8 +35,12 @@ Heroic RaidはWoDから10人以上で人数自由というフォーマットに�
 **新コンテンツTry中は金・土・日の週3日、JST22時開始・24時終了、2時間x3の週6時間**です。
 
 Heroicラスボスをアクティブメンバ全員がクリアし、メタアチーブ(Glory)を欲しい人全員がクリアしたら一旦区切りをつけます。
-Farmは興味が無いメンバも多いので、基本的には数週間Farm runしたのち、**次のTierがオープンするまで休止期間**とします。
+Farmは興味が無いメンバも多いので、基本的には数週間Farm runしたのち、**次のSeasonがオープンするまで休止期間**とします。
 (GearUp を続けたい人は 5man Mythic+があるので、ちょうどいい感じになりました)
+
+おまけとして、Farm run期間に参加人数が20人以下で補欠が発生しなかった日は、
+Heroic終了後に**Mythic 1st bossのみTry**することがあります。
+（Mythic 1stはHeroic装備が十分揃っていれば比較的クリア容易であるため）
 
 休止期間中は他ギルド参加 or ヘルプどんどん行ってください。
 次のRaidのオープンが近い場合は、そのまま継続して次Raidに備えます。
@@ -82,6 +86,7 @@ AddOn:
 - The War Within
   - To be continued...
 - Dragonflight
+  - 10.2.7 - クロスギルドで[Awakened Raid](https://www.wowhead.com/guide/raids/awakened-raids/overview)開催 (2024/06)
   - 10.2 - **Heroic Amirdrassil, the Dream's Hope & Glory clear** (2023/12)
   - 10.1 - **Heroic Aberrus, the Shadowed Crucible & Glory clear** (2023/06)
   - 10.0 - **Heroic Vault of the Incarnates & Glory clear** (2023/01)
