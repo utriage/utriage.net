@@ -22,6 +22,8 @@ tag:
 
 {% include image src="/images/heroic_fyrakk.jpg" %}2023/12/17クリア！
 
+**ちなみに2023/12/23でギルド設立10周年でした！** 🎉🎉🎉
+
 ### 10.2.7 Awakened Raid
 
 {% include image src="/images/heroic_awakened.jpg" %}2024/06/08, Heroic全Raidクリア！
