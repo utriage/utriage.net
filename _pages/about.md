@@ -62,7 +62,14 @@ GBankのBoEはAHに出し、GBank資金（修理費＋可能な限り消耗品�
 ### その他
 
 メンバ・スケジュール管理はin-gameのギルドランクとカレンダーを使います。
-クロス鯖/陣営でのInviteもBfAでできるようになったと思うので、他鯖においているキャラでも参加可能。Inviteを受けるために別鯖の場合は"UT&Friends"コミュニティに入っておいてください。
+クロス鯖/陣営でのInviteもBfAでできるようになったと思うので、他鯖においているキャラでも参加可能。
+
+ただし、Inviteを受けるために別鯖の場合は["UT&Friends"コミュニティ](https://worldofwarcraft.blizzard.com/en-us/invite/jPAMJXqhm2b?region=US)に入っておいてください。
+ゲーム内でジョインするためのinvite codeはこちら：
+
+```text
+jPAMJXqhm2b
+```
 
 GBankからお金をだして、Flask/Pot/Foodは可能な限り提供します。
 GBankの品を使いたい場合はキャラをギルドに所属させてください。
