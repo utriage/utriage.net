@@ -1,6 +1,7 @@
-{% assign raw_src = include.src %}
-{% assign src = raw_src | replace_first: 'watch?v=', 'embed/' | replace_first: 'youtu.be/', 'www.youtube.com/embed/' %}
+{% assign raw_src = include.src %} {% assign src = raw_src | replace_first:
+'watch?v=', 'embed/' | replace_first: 'youtu.be/', 'www.youtube.com/embed/' %}
 
 <div class="movie-wrap">
   <iframe src="{{ src }}" frameborder="0" allowfullscreen></iframe>
 </div>
+<br />

@@ -32,7 +32,7 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 - （Linuxとかmacとか前提）
 - Cloudflare Pagesの対応Rubyバージョンをインストール
   - <https://developers.cloudflare.com/pages/configuration/language-support-and-tools/>
-  - 使ってるなら`rtx install`
+  - 使ってるなら`mise install`（asdfでも可）
 - `make`
 - `make serve`
   - `--watch`が効かないWSLなどの環境なら`make serve.polling`
