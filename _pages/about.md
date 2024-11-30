@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2024-07-18"
+date: "2024-11-30"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -92,6 +92,7 @@ AddOn:
 
 - The War Within
   - To be continued...
+  - 11.0 - **Heroic Nerub-ar & Glory clear** (2024/10)
 - Dragonflight
   - 10.2.7 - クロスギルドで[Awakened Raid](https://www.wowhead.com/guide/raids/awakened-raids/overview)開催 (2024/06)
   - 10.2 - **Heroic Amirdrassil, the Dream's Hope & Glory clear** (2023/12)
