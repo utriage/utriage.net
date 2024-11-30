@@ -52,6 +52,6 @@ Secrets Findingは現在も進行中。バイクマウント欲しい人はフ�
 - その後新拡張"Midnight"の詳細発表
   - プレイヤーハウジング導入！
 
-![2025 Roadmap](https://wow.zamimg.com/uploads/screenshots/normal/1200829.jpg)
+{% include image src="https://wow.zamimg.com/uploads/screenshots/normal/1200829.jpg" %}
 
 って感じです。UT的にはシーズン2にまたお会いしましょう👋👋👋
