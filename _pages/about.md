@@ -17,7 +17,7 @@ US-Ner'zhul (Horde)の**MKD Gaming**を前身としています。
 
 ## Raiding
 
-The War Within拡張でもHeroic Raidを開催します。
+Midnight拡張でもHeroic Raidを開催します。
 
 参加希望の方はゲーム内やDiscordで**Gada**あるいはギルドメンバーにwhisper、
 もしくはTwitterで[**@gada_twt**](https://twitter.com/gada_twt)にメンション・DMください。
@@ -90,8 +90,11 @@ AddOn:
 
 ## Guild History
 
-- The War Within
+- Midnight
   - To be continued...
+- The War Within
+  - 11.2 - **Heroic Manaforge Omega & Glory clear** (2025/09)
+  - 11.1 - **Heroic The Undermine & Glory clear** (2025/04)
   - 11.0 - **Heroic Nerub-ar & Glory clear** (2024/10)
 - Dragonflight
   - 10.2.7 - クロスギルドで[Awakened Raid](https://www.wowhead.com/guide/raids/awakened-raids/overview)開催 (2024/06)
