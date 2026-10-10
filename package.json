@@ -1,8 +1,7 @@
 {
   "name": "utriage.net",
   "version": "1.0.0",
-  "description": "- [Ultimate Triage](#ultimate-triage)\r   - [Static Site with Jekyll](#static-site-with-jekyll)\r   - [How To](#how-to)\r   - [Remarks](#remarks)",
-  "main": "index.js",
+  "description": "Website of WoW guild: Ultimate Triage",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -14,8 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/utriage/utriage.net.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "UNLICENSED",
   "type": "module",
   "bugs": {

@@ -88,5 +88,8 @@ export default defineConfig({
   },
   vite: {
     plugins: [legacyStaticPlugin()],
+    optimizeDeps: {
+      exclude: ['jquery'],
+    },
   },
 });
