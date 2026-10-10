@@ -1,0 +1,56 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Share from '../components/Share.astro';
+import PagePagination from '../components/PagePagination.astro';
+import { SITE } from '../site.config';
+import { formatDate } from '../utils/posts';
+
+interface Props {
+  title?: string;
+  date?: Date;
+  author: string;
+  tags?: string[];
+  excerpt?: string;
+  image?: string;
+  url: string;
+}
+
+const { title, date, author, tags = [], excerpt, image, url } = Astro.props;
+---
+<BaseLayout title={title} excerpt={excerpt} tags={tags} image={image} url={url} bodyId="posts" bodyClass="inner-post-page">
+  <div class="block-left">
+    <div class="content">
+      <a href="/" class="logo"><img src={`/images/${SITE.logo}`} alt={SITE.title} /></a>
+      <div class="post-title-section">
+        <div class="section-line">
+          <a href="/">Back to home</a> <em>/</em>
+        </div>
+        {title && <h1 class="section-title">{title}</h1>}
+        {tags.length > 0 && (
+          <ul class="tags">
+            {tags.map((tag) => (
+              <li><a href={`/tags#${tag}`}>{tag}</a></li>
+            ))}
+          </ul>
+        )}
+        <div class="section-line reverse">{author} <em>/</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-right">
+    <Navigation />
+    <div class="inner-post content">
+      <div class="date-highlight">
+        {date ? formatDate(date) : '\u2756'}
+      </div>
+      <slot />
+      <br />
+      <hr />
+      <Share title={title} url={url} />
+      <hr />
+      <PagePagination />
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,42 @@
+---
+---
+<!-- Lightbox -->
+<script is:inline type="text/javascript" src="/assets/vendor/js/lightbox-plus-jquery.min.js"></script>
+<script is:inline>
+  if (typeof lightbox !== 'undefined') {
+    lightbox.option({
+      fadeDuration: 100,
+      resizeDuration: 100,
+      wrapAround: true,
+    });
+  }
+</script>
+
+<!-- WowDB tooltips -->
+<script is:inline type="text/javascript" src="https://static-azeroth.cursecdn.com/current/js/syndication/tt.js"></script>
+
+<!-- Link preview -->
+<script is:inline type="text/javascript">
+  if (typeof jQuery !== 'undefined') {
+    var previews = jQuery('a.link_preview');
+    jQuery.each(previews, function (i, obj) {
+      var href = jQuery(obj).data('href');
+      var escaped = jQuery(obj).data('escaped');
+      if (href && escaped) {
+        jQuery.getJSON('https://opengraph.io/api/1.0/site/' + escaped, function (data) {
+          if (data && data.openGraph) {
+            var title = jQuery('<a></a>').attr('href', href).text(data.openGraph.title);
+            var image = data.openGraph.image ? jQuery('<img>').attr('src', data.openGraph.image).attr('alt', data.openGraph.title) : '';
+            var desc = jQuery('<p></p>').text(data.openGraph.description);
+            jQuery(obj).replaceWith(
+              jQuery('<dl></dl>')
+                .addClass('link_preview')
+                .append(jQuery('<dt></dt>').append(title))
+                .append(jQuery('<dd></dd>').append(jQuery('<div></div>').append(image).append(desc)))
+            );
+          }
+        });
+      }
+    });
+  }
+</script>

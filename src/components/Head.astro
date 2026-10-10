@@ -1,0 +1,77 @@
+---
+import { SITE } from '../site.config';
+
+interface Props {
+  title?: string;
+  excerpt?: string;
+  tags?: string[];
+  image?: string;
+  url?: string;
+  isHome?: boolean;
+}
+
+const { title, excerpt, tags, image, url = '', isHome = false } = Astro.props;
+
+const pageTitle = title ? `${title} – ${SITE.title}` : SITE.title;
+const pageDescription = excerpt || SITE.description;
+const canonicalUrl = new URL(url, SITE.url).href;
+
+// Left block hero image resolution
+let heroImage = image;
+if (heroImage) {
+  if (!heroImage.startsWith('http://') && !heroImage.startsWith('https://')) {
+    heroImage = heroImage.startsWith('/') ? heroImage : `/${heroImage}`;
+  }
+} else {
+  heroImage = isHome ? `/${SITE.background.homepage}` : `/${SITE.background.defaultPost}`;
+}
+
+const twitterImage = heroImage.startsWith('http') ? heroImage : `${SITE.url}${heroImage}`;
+---
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>{pageTitle}</title>
+  <meta name="description" content={pageDescription} />
+  {tags && tags.length > 0 && <meta name="keywords" content={tags.join(', ')} />}
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content={twitterImage} />
+  <meta name="twitter:title" content={title || SITE.title} />
+  <meta name="twitter:description" content={pageDescription} />
+  <meta name="twitter:site" content={`@${SITE.twitter}`} />
+  <meta name="twitter:creator" content={`@${SITE.twitter}`} />
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content={SITE.locale} />
+  <meta property="og:type" content={isHome ? 'website' : 'article'} />
+  <meta property="og:title" content={title || SITE.title} />
+  <meta property="og:description" content={pageDescription} />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content={SITE.title} />
+  <meta property="og:image" content={twitterImage} />
+
+  <link rel="canonical" href={canonicalUrl} />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/png" href="/favicon.png?v=2" />
+  <link rel="shortcut icon" href="/favicon.ico?v=2" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="/assets/vendor/css/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
+  <script src="https://kit.fontawesome.com/8537eca445.js" crossorigin="anonymous"></script>
+
+  <!-- Left Block Image -->
+  <style is:inline set:html={`
+    .block-left {
+      background-image: url("${heroImage}");
+    }
+  `} />
+</head>

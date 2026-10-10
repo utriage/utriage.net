@@ -1,0 +1,38 @@
+{
+  "name": "utriage.net",
+  "version": "1.0.0",
+  "description": "- [Ultimate Triage](#ultimate-triage)\r   - [Static Site with Jekyll](#static-site-with-jekyll)\r   - [How To](#how-to)\r   - [Remarks](#remarks)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "deploy": "wrangler pages deploy dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utriage/utriage.net.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/utriage/utriage.net/issues"
+  },
+  "homepage": "https://github.com/utriage/utriage.net#readme",
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/markdown-remark": "^7.3.2",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.8",
+    "typescript": "~5.7.3",
+    "unist-util-visit": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.4",
+    "wrangler": "^4.149.0"
+  }
+}
