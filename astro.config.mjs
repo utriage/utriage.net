@@ -47,19 +47,26 @@ function copyLegacyAssetsIntegration() {
     name: 'copy-legacy-assets',
     hooks: {
       'astro:build:done': async ({ dir }) => {
-        const outDir = dir.pathname.replace(/^\/([A-Za-z]:)/, '$1'); // Clean up file URL on Windows if needed
-        const resolvedOutDir = path.resolve(outDir);
-        const toCopy = [
-          { src: 'images', dest: path.join(resolvedOutDir, 'images') },
-          { src: 'assets', dest: path.join(resolvedOutDir, 'assets') },
-          { src: 'favicon.ico', dest: path.join(resolvedOutDir, 'favicon.ico') },
-          { src: 'favicon.png', dest: path.join(resolvedOutDir, 'favicon.png') },
-        ];
-        for (const item of toCopy) {
-          const srcPath = path.resolve(process.cwd(), item.src);
-          if (fs.existsSync(srcPath)) {
-            fs.cpSync(srcPath, item.dest, { recursive: true, force: true });
+        try {
+          const outDir = dir.pathname.replace(/^\/([A-Za-z]:)/, '$1');
+          const resolvedOutDir = path.resolve(outDir);
+          const toCopy = [
+            { src: 'images', dest: path.join(resolvedOutDir, 'images') },
+            { src: 'assets', dest: path.join(resolvedOutDir, 'assets') },
+            { src: 'favicon.ico', dest: path.join(resolvedOutDir, 'favicon.ico') },
+            { src: 'favicon.png', dest: path.join(resolvedOutDir, 'favicon.png') },
+          ];
+          for (const item of toCopy) {
+            const srcPath = path.resolve(process.cwd(), item.src);
+            if (fs.existsSync(srcPath)) {
+              fs.cpSync(srcPath, item.dest, { recursive: true, force: true });
+            }
           }
+          // Mirror dist to _site for backwards compatibility with legacy Cloudflare Pages build settings
+          const siteDir = path.resolve(process.cwd(), '_site');
+          fs.cpSync(resolvedOutDir, siteDir, { recursive: true, force: true });
+        } catch (err) {
+          console.error('[copyLegacyAssetsIntegration error]:', err);
         }
       },
     },
