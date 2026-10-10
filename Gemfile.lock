@@ -16,6 +16,7 @@ GEM
     faraday-net_http (3.4.4)
       net-http (~> 0.5)
     ffi (1.16.3)
+    ffi (1.16.3-x64-mingw-ucrt)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
     i18n (1.14.1)
@@ -77,11 +78,13 @@ GEM
       addressable (>= 2.3.5)
       faraday (>= 0.17.3, < 3)
     uri (1.1.1)
+    wdm (0.2.0)
     webrick (1.8.2)
 
 PLATFORMS
   arm64-darwin-21
   ruby
+  x64-mingw-ucrt
 
 DEPENDENCIES
   jekyll (< 4.0)
@@ -89,6 +92,7 @@ DEPENDENCIES
   jekyll-gist
   jekyll-sitemap
   kramdown-parser-gfm
+  wdm (>= 0.1.0)
   webrick (~> 1.8)
 
 BUNDLED WITH
