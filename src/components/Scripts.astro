@@ -19,7 +19,7 @@
 <script is:inline type="text/javascript">
   if (typeof jQuery !== 'undefined') {
     var previews = jQuery('a.link_preview');
-    jQuery.each(previews, function (i, obj) {
+    jQuery.each(previews, function (_i, obj) {
       var href = jQuery(obj).data('href');
       var escaped = jQuery(obj).data('escaped');
       if (href && escaped) {
