@@ -8,6 +8,14 @@ function legacyStaticPlugin() {
   return {
     name: 'legacy-static-assets',
     configureServer(server) {
+      const assetsDir = path.resolve(process.cwd(), 'assets');
+      server.watcher.add(assetsDir);
+      server.watcher.on('change', (changedPath) => {
+        if (changedPath.startsWith(assetsDir)) {
+          server.ws.send({ type: 'full-reload', path: '*' });
+        }
+      });
+
       server.middlewares.use((req, res, next) => {
         const decodedUrl = decodeURI(req.url?.split('?')[0] || '');
         const staticPaths = ['/images/', '/assets/', '/favicon.ico', '/favicon.png'];
@@ -30,6 +38,7 @@ function legacyStaticPlugin() {
               '.ttf': 'font/ttf',
               '.eot': 'application/vnd.ms-fontobject',
             };
+            res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
             res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream');
             fs.createReadStream(filePath).pipe(res);
             return;
