@@ -1,27 +1,28 @@
 # Ultimate Triage
 
 - [Ultimate Triage](#ultimate-triage)
-  - [Static Site with Jekyll](#static-site-with-jekyll)
+  - [Static Site with Astro](#static-site-with-astro)
   - [How To](#how-to)
   - [Remarks](#remarks)
 
-World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェブサイトソースコードです。
+World of Warcraftギルド[**Ultimate Triage**](https://utriage.net)のウェブサイトソースコードです。
 
 - ~~Github~~ Cloudflare Pagesを使って公開しています(タダ！)。
-- 静的サイトジェネレータ[Jekyll](http://jekyllrb.com/)と、
-  少し手を加えた[Halve theme](https://github.com/TaylanTatli/Halve)を使用しています。
+- 元々は静的サイトジェネレータ[Jekyll](http://jekyllrb.com/)を使っていましたが、現在は[Astro](https://astro.build/) (TypeScript) に移行しています。
+  テーマはJekyll時代に少し手を加えた[Halve theme](https://github.com/TaylanTatli/Halve)のデザイン・CSSを移植してそのまま引き継いでいます。
 - 管理者は[ymtszw](https://github.com/ymtszw) a.k.a. [Gada](https://twitter.com/gada_twt)です。
 
-## Static Site with Jekyll
+## Static Site with Astro
 
 - WordPress等のCMSがイマイチ好きくないので、markdownで書けて、
   ビルドしてしまえば読み込みも高速な静的サイトジェネレータを使うことにしました。
-- GithubとJekyllの仕組みを知っている方は、markdownで書いた記事をPRしてもらえれば、mergeします。
+- 元々はJekyllで動かしていましたが、環境構築の面倒さ（特にWindows環境でのRuby/C拡張のビルド辛い問題など）から脱却するため、Astro + TypeScript構成に移行しました。
+- GithubやMarkdownでのサイト管理に興味がある方は、markdownで書いた記事をPRしてもらえれば、mergeします。
   - よくあるFrontmatterのついたMarkdownです。[_posts/](./_posts)ディレクトリの既存記事を参考にしてください。
     - `author`という筆者を表示するcustom variableを使っています。
   - 最新記事は数十件トップに並びますが、ある程度以上古いものは表示されません。
   - 過去記事に飛ぶためのカレンダーはないですが、Front MattersにリストアップしたTagを元にインデックスされるので、
-      [Tags](http://www.utriage.net/tags)ページからキーワードごとに飛べます。
+    [Tags](https://utriage.net/tags)ページからキーワードごとに飛べます。
     - 逆に言うとTagがついていない記事はpermalinkを知らないと埋もれます。
 - Lightboxを使った画像ポップアップ表示・スライドショーに対応しています。
 - WoWDBのリンクツールチップに対応しています。Wowheadでもいいんですが、微妙にスタイル崩れてたので。
