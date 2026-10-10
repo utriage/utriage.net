@@ -23,4 +23,16 @@ import { SITE } from '../site.config';
       </a>
     </li>
   )}
+  {SITE.battleNet && (
+    <li>
+      <a class="social-btn" href={SITE.battleNet} target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-fw fa-battle-net"></i>
+      </a>
+    </li>
+  )}
+  <li>
+    <a class="social-btn" href="/feed.xml">
+      <i class="fa fa-fw fa-rss"></i>
+    </a>
+  </li>
 </ul>

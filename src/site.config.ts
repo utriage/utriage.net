@@ -7,6 +7,7 @@ export const SITE = {
   twitter: 'gada_twt',
   github: 'utriage/utriage.github.io',
   discord: 's6gkEHF',
+  battleNet: 'https://worldofwarcraft.com/en-us/guild/us/proudmoore/ultimate-triage',
   background: {
     homepage: 'images/dalaran.jpg',
     defaultPost: 'images/gate-of-stormwind.jpg',
