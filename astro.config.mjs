@@ -62,9 +62,6 @@ function copyLegacyAssetsIntegration() {
               fs.cpSync(srcPath, item.dest, { recursive: true, force: true });
             }
           }
-          // Mirror dist to _site for backwards compatibility with legacy Cloudflare Pages build settings
-          const siteDir = path.resolve(process.cwd(), '_site');
-          fs.cpSync(resolvedOutDir, siteDir, { recursive: true, force: true });
         } catch (err) {
           console.error('[copyLegacyAssetsIntegration error]:', err);
         }
