@@ -30,14 +30,14 @@ World of Warcraftギルド[**Ultimate Triage**](https://utriage.net)のウェブ
 
 ## How To
 
-- Node.js (v20以上、推奨 v22 or v24)
-  - `mise install`（asdfでも可）
+- Node.js (v24以降のLTS、`.node-version` 参照)
+  - `mise install` 等
 - 開発サーバー起動:
-  - `npm run dev` (または `make dev` / `make serve`) -> http://127.0.0.1:4000
+  - `npm run dev` -> http://127.0.0.1:4000
 - ビルド:
-  - `npm run build` (または `make build`) -> `dist/` に静的サイト生成
+  - `npm run build` -> `dist/` に静的サイト生成
 - 型チェック:
-  - `npm run check` (または `make check`)
+  - `npm run check`
 
 ## Remarks
 
