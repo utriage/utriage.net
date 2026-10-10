@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@types/mdast": "^4.0.4",
-    "wrangler": "^4.145.0"
+    "wrangler": "^4.149.0"
   }
 }
