@@ -12,6 +12,7 @@ serve: dev
 
 .PHONY: build
 build:
+	npm install
 	npm run build
 
 .PHONY: check

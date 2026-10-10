@@ -69,9 +69,9 @@ const twitterImage = heroImage.startsWith('http') ? heroImage : `${SITE.url}${he
   <script src="https://kit.fontawesome.com/8537eca445.js" crossorigin="anonymous"></script>
 
   <!-- Left Block Image -->
-  <style define:vars={{ heroImage: `url("${heroImage}")` }}>
+  <style is:inline set:html={`
     .block-left {
-      background-image: var(--heroImage);
+      background-image: url("${heroImage}");
     }
-  </style>
+  `} />
 </head>

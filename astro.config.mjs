@@ -1,15 +1,15 @@
 import { defineConfig } from 'astro/config';
 import fs from 'node:fs';
 import path from 'node:path';
+import sitemap from '@astrojs/sitemap';
 
-// Vite plugin to serve and copy legacy root static directories (images/, assets/, favicon.*)
+// Vite plugin to serve legacy static assets during dev
 function legacyStaticPlugin() {
   return {
     name: 'legacy-static-assets',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
         const decodedUrl = decodeURI(req.url?.split('?')[0] || '');
-        // Check if request matches /images/*, /assets/*, or /favicon.*
         const staticPaths = ['/images/', '/assets/', '/favicon.ico', '/favicon.png'];
         const matched = staticPaths.some((p) => decodedUrl.startsWith(p) || decodedUrl === p);
         if (matched) {
@@ -38,40 +38,40 @@ function legacyStaticPlugin() {
         next();
       });
     },
-    closeBundle() {
-      // Copy images, assets, and favicons to dist output directory during build
-      const distDir = path.resolve(process.cwd(), 'dist');
-      if (!fs.existsSync(distDir)) return;
+  };
+}
 
-      const toCopy = [
-        { src: 'images', dest: path.join(distDir, 'images') },
-        { src: 'assets', dest: path.join(distDir, 'assets') },
-        { src: 'favicon.ico', dest: path.join(distDir, 'favicon.ico') },
-        { src: 'favicon.png', dest: path.join(distDir, 'favicon.png') },
-      ];
-
-      for (const item of toCopy) {
-        const srcPath = path.resolve(process.cwd(), item.src);
-        if (fs.existsSync(srcPath)) {
-          fs.cpSync(srcPath, item.dest, { recursive: true, force: true });
+// Astro integration to copy legacy assets on build
+function copyLegacyAssetsIntegration() {
+  return {
+    name: 'copy-legacy-assets',
+    hooks: {
+      'astro:build:done': async ({ dir }) => {
+        const outDir = dir.pathname.replace(/^\/([A-Za-z]:)/, '$1'); // Clean up file URL on Windows if needed
+        const resolvedOutDir = path.resolve(outDir);
+        const toCopy = [
+          { src: 'images', dest: path.join(resolvedOutDir, 'images') },
+          { src: 'assets', dest: path.join(resolvedOutDir, 'assets') },
+          { src: 'favicon.ico', dest: path.join(resolvedOutDir, 'favicon.ico') },
+          { src: 'favicon.png', dest: path.join(resolvedOutDir, 'favicon.png') },
+        ];
+        for (const item of toCopy) {
+          const srcPath = path.resolve(process.cwd(), item.src);
+          if (fs.existsSync(srcPath)) {
+            fs.cpSync(srcPath, item.dest, { recursive: true, force: true });
+          }
         }
-      }
+      },
     },
   };
 }
 
-import { remarkLiquidIncludes } from './src/plugins/remark-liquid-includes.ts';
-import sitemap from '@astrojs/sitemap';
-
 export default defineConfig({
   site: 'https://utriage.net',
-  integrations: [sitemap()],
+  integrations: [sitemap(), copyLegacyAssetsIntegration()],
   server: {
     port: 4000,
     host: '127.0.0.1',
-  },
-  markdown: {
-    remarkPlugins: [remarkLiquidIncludes],
   },
   vite: {
     plugins: [legacyStaticPlugin()],

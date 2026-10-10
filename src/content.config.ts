@@ -1,9 +1,9 @@
 import { defineCollection } from 'astro:content';
 import { z } from 'astro/zod';
-import { glob } from 'astro/loaders';
+import { liquidGlob } from './utils/liquid-loader';
 
 const posts = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './_posts' }),
+  loader: liquidGlob({ pattern: '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-*.md', base: './_posts' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date().optional(),
@@ -17,7 +17,7 @@ const posts = defineCollection({
 });
 
 const pages = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './_pages' }),
+  loader: liquidGlob({ pattern: '[!_]*.md', base: './_pages' }),
   schema: z.object({
     title: z.string().optional(),
     date: z.coerce.date().optional(),
