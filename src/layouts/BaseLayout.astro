@@ -1,0 +1,25 @@
+---
+import Head from '../components/Head.astro';
+import Scripts from '../components/Scripts.astro';
+
+interface Props {
+  title?: string;
+  excerpt?: string;
+  tags?: string[];
+  image?: string;
+  url?: string;
+  isHome?: boolean;
+  bodyId?: string;
+  bodyClass?: string;
+}
+
+const { title, excerpt, tags, image, url, isHome = false, bodyId, bodyClass } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="ja">
+  <Head title={title} excerpt={excerpt} tags={tags} image={image} url={url} isHome={isHome} />
+  <body id={bodyId} class={bodyClass}>
+    <slot />
+    <Scripts />
+  </body>
+</html>

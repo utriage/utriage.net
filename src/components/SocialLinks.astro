@@ -1,0 +1,26 @@
+---
+import { SITE } from '../site.config';
+---
+<ul>
+  {SITE.twitter && (
+    <li>
+      <a class="social-btn" href={`https://twitter.com/${SITE.twitter}`} target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-fw fa-twitter"></i>
+      </a>
+    </li>
+  )}
+  {SITE.github && (
+    <li>
+      <a class="social-btn" href={`https://github.com/${SITE.github}`} target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-fw fa-github"></i>
+      </a>
+    </li>
+  )}
+  {SITE.discord && (
+    <li>
+      <a class="social-btn" href={`https://discord.gg/${SITE.discord}`} target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-fw fa-discord"></i>
+      </a>
+    </li>
+  )}
+</ul>

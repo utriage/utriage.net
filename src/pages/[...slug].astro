@@ -1,0 +1,57 @@
+---
+import { getCollection, render } from 'astro:content';
+import PostLayout from '../layouts/PostLayout.astro';
+import { getPostDate, getPostSlug, getPostTags } from '../utils/posts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const sorted = posts.sort((a, b) => getPostDate(b).getTime() - getPostDate(a).getTime());
+
+  const allPostsSummary = sorted.map((p) => ({
+    url: `/${getPostSlug(p)}`,
+    title: p.data.title,
+    tags: getPostTags(p),
+  }));
+
+  return sorted.map((post, index) => {
+    const slug = getPostSlug(post);
+    // In Jekyll: page.previous is older, page.next is newer
+    const newerPost = index > 0 ? sorted[index - 1] : undefined;
+    const olderPost = index < sorted.length - 1 ? sorted[index + 1] : undefined;
+
+    return {
+      params: { slug },
+      props: {
+        post,
+        allPosts: allPostsSummary,
+        prev: olderPost
+          ? { url: `/${getPostSlug(olderPost)}`, title: olderPost.data.title }
+          : undefined,
+        next: newerPost
+          ? { url: `/${getPostSlug(newerPost)}`, title: newerPost.data.title }
+          : undefined,
+      },
+    };
+  });
+}
+
+const { post, allPosts, prev, next } = Astro.props;
+const { Content } = await render(post);
+const date = getPostDate(post);
+const tags = getPostTags(post);
+const url = `/${getPostSlug(post)}`;
+---
+<PostLayout
+  title={post.data.title}
+  date={date}
+  author={post.data.author}
+  tags={tags}
+  excerpt={post.data.excerpt}
+  image={post.data.image}
+  url={url}
+  prev={prev}
+  next={next}
+  allPosts={allPosts}
+>
+  <Content />
+</PostLayout>

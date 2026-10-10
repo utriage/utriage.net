@@ -1,17 +1,23 @@
 .PHONY: all
 all:
-	gem install bundler
-	bundle install
-	make build
+	npm install
+	npm run build
+
+.PHONY: dev
+dev:
+	npm run dev
+
+.PHONY: serve
+serve: dev
 
 .PHONY: build
 build:
-	bundle exec jekyll build
+	npm run build
 
-.PHONY: serve
-serve:
-	bundle exec jekyll serve --livereload --future
+.PHONY: check
+check:
+	npm run check
 
-.PHONY: serve.polling
-serve.polling:
-	bundle exec jekyll serve --livereload --future --force_polling
+.PHONY: preview
+preview:
+	npm run preview

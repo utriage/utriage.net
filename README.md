@@ -29,16 +29,18 @@ World of Warcraftギルド[**Ultimate Triage**](http://www.utriage.net)のウェ
 
 ## How To
 
-- （Linuxとかmacとか前提）
-- Cloudflare Pagesの対応Rubyバージョンをインストール
-  - <https://developers.cloudflare.com/pages/configuration/language-support-and-tools/>
-  - 使ってるなら`mise install`（asdfでも可）
-- `make`
-- `make serve`
-  - `--watch`が効かないWSLなどの環境なら`make serve.polling`
+- Node.js (v20以上、推奨 v22 or v24)
+  - `mise install`（asdfでも可）
+- 開発サーバー起動:
+  - `npm run dev` (または `make dev` / `make serve`) -> http://127.0.0.1:4000
+- ビルド:
+  - `npm run build` (または `make build`) -> `dist/` に静的サイト生成
+- 型チェック:
+  - `npm run check` (または `make check`)
 
 ## Remarks
 
-- [Jekyll](http://jekyllrb.com/)
+- [Astro](https://astro.build/)
 - [Halve](https://github.com/TaylanTatli/Halve)
 - [Noto Sans CJK JP](https://www.google.com/get/noto/#sans-jpan)
+

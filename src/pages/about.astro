@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+import PageLayout from '../layouts/PageLayout.astro';
+
+const pages = await getCollection('pages');
+const aboutPage = pages.find((p) => p.id === 'about.md' || p.id === 'about');
+
+if (!aboutPage) {
+  throw new Error('about.md not found in _pages collection');
+}
+
+const { Content } = await render(aboutPage);
+---
+<PageLayout
+  title={aboutPage.data.title}
+  date={aboutPage.data.date}
+  author={aboutPage.data.author}
+  tags={aboutPage.data.tags || aboutPage.data.tag}
+  excerpt={aboutPage.data.excerpt}
+  image={aboutPage.data.image}
+  url="/about"
+>
+  <Content />
+</PageLayout>

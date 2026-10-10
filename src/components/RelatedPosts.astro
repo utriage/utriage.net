@@ -1,0 +1,26 @@
+---
+interface Props {
+  currentUrl: string;
+  currentTags: string[];
+  allPosts: Array<{ url: string; title: string; tags: string[] }>;
+  maxRelated?: number;
+}
+
+const { currentUrl, currentTags, allPosts, maxRelated = 4 } = Astro.props;
+
+const relatedPosts = allPosts
+  .filter((post) => post.url !== currentUrl)
+  .map((post) => {
+    const similarity = post.tags.filter((t) => currentTags.includes(t)).length;
+    return { ...post, similarity };
+  })
+  .filter((post) => post.similarity >= 2)
+  .slice(0, maxRelated);
+---
+{relatedPosts.length > 0 && (
+  <ul>
+    {relatedPosts.map((post) => (
+      <li><a href={post.url}>{post.title}</a></li>
+    ))}
+  </ul>
+)}

@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import { SITE } from '../site.config';
+import { getCollection } from 'astro:content';
+import { getPostDate, getPostSlug, getPostTags, formatDate } from '../utils/posts';
+
+const allPosts = await getCollection('posts');
+const sortedPosts = allPosts.sort((a, b) => {
+  return getPostDate(b).getTime() - getPostDate(a).getTime();
+});
+---
+<BaseLayout isHome={true} bodyId="homepage">
+  <div class="block-left">
+    <div class="content">
+      <div class="main-info">
+        <a href="/" class="logo">
+          <img src={`/images/${SITE.logo}`} alt={SITE.title} />
+        </a>
+        <h1>{SITE.title}</h1>
+        <h2>{SITE.description}</h2>
+        <SocialLinks />
+      </div>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <div class="block-right">
+    <Navigation />
+    <div class="content">
+      <ul class="posts-list">
+        {sortedPosts.map((post) => {
+          const date = getPostDate(post);
+          const slug = getPostSlug(post);
+          const tags = getPostTags(post);
+          const excerpt = post.data.excerpt || '';
+          return (
+            <li>
+              <h2>
+                <a href={`/${slug}`} class="post-title">
+                  <span>{post.data.title}</span>
+                </a>
+                <span class="date">{formatDate(date)}</span>
+              </h2>
+              {excerpt && <p>{excerpt}</p>}
+              <ul class="tags">
+                {tags.map((tag) => (
+                  <li><a href={`/tags#${tag}`}>{tag}</a></li>
+                ))}
+              </ul>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../site.config';
+---
+<BaseLayout title="404 Not Found" image="/images/not-found.jpg" url="/404.html" bodyId="posts" bodyClass="inner-post-page">
+  <style is:inline>
+    .block-left {
+      width: 100% !important;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .block-right {
+      display: none !important;
+    }
+  </style>
+  <div class="block-left">
+    <div class="content">
+      <a href="/" class="logo"><img src={`/images/${SITE.logo}`} alt={SITE.title} /></a>
+      <div class="post-title-section">
+        <div class="section-line">
+          <a href="/">Back to home</a> <em>/</em>
+        </div>
+        <h1 class="section-title">404 Not Found</h1>
+        <div class="section-line reverse">Ultimate Triage <em>/</em></div>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
