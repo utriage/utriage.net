@@ -78,7 +78,7 @@ GBankの品を使いたい場合はキャラをギルドに所属させてくだ
 
 音声チャットに[Discord](https://discordapp.com/)を使用します。
 
-ログは[World of Logs](https://www.warcraftlogs.com/guilds/4199/)にアップロードしています。
+ログは[Warcraft Logs](https://www.warcraftlogs.com/guild/reports-list/4199)にアップロードしています。
 
 AddOn:
 
