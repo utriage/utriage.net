@@ -1,6 +1,6 @@
 ---
 title: "ギルド紹介"
-date: "2024-11-30"
+date: "2026-10-11"
 excerpt: "ギルドUltimate Triageについて"
 permalink: /about
 image: "images/glory_of_the_uldir_raider.jpg"
@@ -92,6 +92,10 @@ AddOn:
 
 - Midnight
   - To be continued...
+  - 12.1 - **Heroic The Venomous Abyss & Glory clear** (2026/10)
+  - 12.0.7 - **Heroic Sporefall clear** (2026/06)
+    - Flex Mythic導入を活かし、12.0インスタンスの序盤ボスと合わせてMythic 4ボスも撃破
+  - 12.0 - **Heroic March on Quel'Danas & Glory clear** (2026/04)
 - The War Within
   - 11.2 - **Heroic Manaforge Omega & Glory clear** (2025/09)
   - 11.1 - **Heroic The Undermine & Glory clear** (2025/04)
