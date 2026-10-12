@@ -81,6 +81,10 @@ function copyLegacyAssetsIntegration() {
 
 export default defineConfig({
   site: 'https://utriage.net',
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: 'hover',
+  },
   integrations: [sitemap(), copyLegacyAssetsIntegration()],
   server: {
     port: 4000,

@@ -22,7 +22,7 @@ interface Props {
 
 const { title, date, author, tags, excerpt, image, url, prev, next, allPosts } = Astro.props;
 ---
-<BaseLayout title={title} excerpt={excerpt} tags={tags} image={image} url={url} bodyId="posts" bodyClass="inner-post-page">
+<BaseLayout title={title} excerpt={excerpt} tags={tags} image={image} url={url} isArticle={true} date={date} author={author} bodyId="posts" bodyClass="inner-post-page">
   <div class="block-left">
     <div class="content">
       <a href="/" class="logo"><img src={`/images/${SITE.logo}`} alt={SITE.title} /></a>

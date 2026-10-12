@@ -38,6 +38,8 @@ World of Warcraftギルド[**Ultimate Triage**](https://utriage.net)のウェブ
   - `npm run build` -> `dist/` に静的サイト生成
 - 型チェック:
   - `npm run check`
+- パフォーマンス・SEO監査:
+  - `npm run perf` -> Lighthouse CI によるローカル監査レポート生成
 
 ## Remarks
 

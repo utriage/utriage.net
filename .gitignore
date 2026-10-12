@@ -8,3 +8,4 @@ _config_dev.yml
 node_modules/
 .astro/
 dist/
+.lighthouseci/

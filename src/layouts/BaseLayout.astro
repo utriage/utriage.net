@@ -9,15 +9,40 @@ interface Props {
   image?: string;
   url?: string;
   isHome?: boolean;
+  isArticle?: boolean;
+  date?: Date;
+  author?: string;
   bodyId?: string;
   bodyClass?: string;
 }
 
-const { title, excerpt, tags, image, url, isHome = false, bodyId, bodyClass } = Astro.props;
+const {
+  title,
+  excerpt,
+  tags,
+  image,
+  url,
+  isHome = false,
+  isArticle = false,
+  date,
+  author,
+  bodyId,
+  bodyClass,
+} = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="ja">
-  <Head title={title} excerpt={excerpt} tags={tags} image={image} url={url} isHome={isHome} />
+  <Head
+    title={title}
+    excerpt={excerpt}
+    tags={tags}
+    image={image}
+    url={url}
+    isHome={isHome}
+    isArticle={isArticle}
+    date={date}
+    author={author}
+  />
   <body id={bodyId} class={bodyClass}>
     <slot />
     <Scripts />

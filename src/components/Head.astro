@@ -8,9 +8,22 @@ interface Props {
   image?: string;
   url?: string;
   isHome?: boolean;
+  isArticle?: boolean;
+  date?: Date;
+  author?: string;
 }
 
-const { title, excerpt, tags, image, url = '', isHome = false } = Astro.props;
+const {
+  title,
+  excerpt,
+  tags,
+  image,
+  url = '',
+  isHome = false,
+  isArticle = false,
+  date,
+  author,
+} = Astro.props;
 
 const pageTitle = title ? `${title} – ${SITE.title}` : SITE.title;
 const pageDescription = excerpt || SITE.description;
@@ -27,6 +40,58 @@ if (heroImage) {
 }
 
 const twitterImage = heroImage.startsWith('http') ? heroImage : `${SITE.url}${heroImage}`;
+
+// Structured Data (JSON-LD)
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.title,
+  url: SITE.url,
+  description: SITE.description,
+  inLanguage: SITE.locale.replace('_', '-'),
+};
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE.title,
+  url: SITE.url,
+  logo: `${SITE.url}/images/${SITE.logo}`,
+  sameAs: [
+    `https://twitter.com/${SITE.twitter}`,
+    `https://github.com/${SITE.github}`,
+    `https://discord.gg/${SITE.discord}`,
+    SITE.battleNet,
+  ],
+};
+
+const articleSchema = isArticle
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline: title || SITE.title,
+      description: pageDescription,
+      image: twitterImage,
+      datePublished: date ? date.toISOString() : undefined,
+      url: canonicalUrl,
+      author: {
+        '@type': 'Person',
+        name: author || SITE.title,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: SITE.title,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE.url}/images/${SITE.logo}`,
+        },
+      },
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': canonicalUrl,
+      },
+    }
+  : null;
 ---
 
 <head>
@@ -47,7 +112,7 @@ const twitterImage = heroImage.startsWith('http') ? heroImage : `${SITE.url}${he
 
   <!-- Open Graph -->
   <meta property="og:locale" content={SITE.locale} />
-  <meta property="og:type" content={isHome ? 'website' : 'article'} />
+  <meta property="og:type" content={isArticle ? 'article' : 'website'} />
   <meta property="og:title" content={title || SITE.title} />
   <meta property="og:description" content={pageDescription} />
   <meta property="og:url" content={canonicalUrl} />
@@ -58,20 +123,42 @@ const twitterImage = heroImage.startsWith('http') ? heroImage : `${SITE.url}${he
   <meta name="HandheldFriendly" content="True" />
   <meta name="MobileOptimized" content="320" />
 
+  <!-- Feeds & Machine / AI Discovery -->
+  <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
+  <link rel="sitemap" type="application/xml" href="/sitemap-index.xml" />
+  <link rel="alternate" type="text/markdown" title="LLM Overview" href="/llms.txt" />
+
   <!-- Favicons -->
   <link rel="shortcut icon" type="image/png" href="/favicon.png?v=2" />
   <link rel="shortcut icon" href="/favicon.ico?v=2" />
 
+  <!-- Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" />
+
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
   <link rel="stylesheet" type="text/css" href="/assets/vendor/css/lightbox.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" />
-  <script src="https://kit.fontawesome.com/8537eca445.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/8537eca445.js" crossorigin="anonymous" defer></script>
 
-  <!-- Left Block Image -->
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
+  {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
+
+  <!-- Left Block Image & Font Fallback -->
   <style is:inline set:html={`
     .block-left {
       background-image: url("${heroImage}");
+    }
+    @font-face {
+      font-family: 'Noto Sans Japanese';
+      src: local('Noto Sans JP');
+    }
+    @font-face {
+      font-family: 'Noto Sans CJK JP';
+      src: local('Noto Sans JP');
     }
   `} />
 </head>
