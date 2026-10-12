@@ -4,35 +4,35 @@ import { SITE } from '../site.config';
 <ul>
   {SITE.twitter && (
     <li>
-      <a class="social-btn" href={`https://twitter.com/${SITE.twitter}`} target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-fw fa-twitter"></i>
+      <a class="social-btn" href={`https://twitter.com/${SITE.twitter}`} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+        <i class="fab fa-fw fa-twitter" aria-hidden="true"></i>
       </a>
     </li>
   )}
   {SITE.github && (
     <li>
-      <a class="social-btn" href={`https://github.com/${SITE.github}`} target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-fw fa-github"></i>
+      <a class="social-btn" href={`https://github.com/${SITE.github}`} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i>
       </a>
     </li>
   )}
   {SITE.discord && (
     <li>
-      <a class="social-btn" href={`https://discord.gg/${SITE.discord}`} target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-fw fa-discord"></i>
+      <a class="social-btn" href={`https://discord.gg/${SITE.discord}`} target="_blank" rel="noopener noreferrer" aria-label="Discord">
+        <i class="fab fa-fw fa-discord" aria-hidden="true"></i>
       </a>
     </li>
   )}
   {SITE.battleNet && (
     <li>
-      <a class="social-btn" href={SITE.battleNet} target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-fw fa-battle-net"></i>
+      <a class="social-btn" href={SITE.battleNet} target="_blank" rel="noopener noreferrer" aria-label="Battle.net Guild Page">
+        <i class="fab fa-fw fa-battle-net" aria-hidden="true"></i>
       </a>
     </li>
   )}
   <li>
-    <a class="social-btn" href="/feed.xml">
-      <i class="fa fa-fw fa-rss"></i>
+    <a class="social-btn" href="/feed.xml" aria-label="RSS Feed">
+      <i class="fa fa-fw fa-rss" aria-hidden="true"></i>
     </a>
   </li>
 </ul>

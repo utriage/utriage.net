@@ -97,7 +97,7 @@ const articleSchema = isArticle
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{pageTitle}</title>
   <meta name="description" content={pageDescription} />
   {tags && tags.length > 0 && <meta name="keywords" content={tags.join(', ')} />}
@@ -120,8 +120,6 @@ const articleSchema = isArticle
   <meta property="og:image" content={twitterImage} />
 
   <link rel="canonical" href={canonicalUrl} />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
 
   <!-- Feeds & Machine / AI Discovery -->
   <link rel="alternate" type="application/rss+xml" title={SITE.title} href="/feed.xml" />
@@ -147,18 +145,13 @@ const articleSchema = isArticle
   <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />
   {articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
 
-  <!-- Left Block Image & Font Fallback -->
+  <!-- Left Block Image & Japanese Font Enforcement -->
   <style is:inline set:html={`
     .block-left {
       background-image: url("${heroImage}");
     }
-    @font-face {
-      font-family: 'Noto Sans Japanese';
-      src: local('Noto Sans JP');
-    }
-    @font-face {
-      font-family: 'Noto Sans CJK JP';
-      src: local('Noto Sans JP');
+    body, h1, h2, h3, h4, h5, h6, input, textarea, select, button, .post-title, .section-title, .content, .inner-post {
+      font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif !important;
     }
   `} />
 </head>
