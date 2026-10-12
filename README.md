@@ -25,7 +25,6 @@ World of Warcraftギルド[**Ultimate Triage**](https://utriage.net)のウェブ
     [Tags](https://utriage.net/tags)ページからキーワードごとに飛べます。
     - 逆に言うとTagがついていない記事はpermalinkを知らないと埋もれます。
 - Lightboxを使った画像ポップアップ表示・スライドショーに対応しています。
-- WoWDBのリンクツールチップに対応しています。Wowheadでもいいんですが、微妙にスタイル崩れてたので。
 - なんのこっちゃわからないけど記事を書きたいメンバの方は、適当なテキスト形式で書いた記事を送ってください。整形して載せます。
 
 ## How To

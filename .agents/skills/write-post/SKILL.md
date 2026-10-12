@@ -67,12 +67,6 @@ tag:
 {% include link_with_preview.html href="https://example.com/article" %}
 ```
 
-### WoWDB ツールチップ
-WoWDB のアイテム・スペルリンクは自動的にマウスホバーツールチップが有効化されます。
-```markdown
-[Thunderfury, Blessed Blade of the Windseeker](https://www.wowdb.com/items/19019)
-```
-
 ---
 
 ## 3. 執筆・公開ワークフロー手順
