@@ -18,6 +18,18 @@ function legacyStaticPlugin() {
 
       server.middlewares.use((req, res, next) => {
         const decodedUrl = decodeURI(req.url?.split('?')[0] || '');
+
+        if (decodedUrl === '/assets/perf/v.js') {
+          res.setHeader('Content-Type', 'application/javascript');
+          res.end('/* Cloudflare Analytics dev stub */');
+          return;
+        }
+        if (decodedUrl === '/api/v1/rum') {
+          res.statusCode = 204;
+          res.end();
+          return;
+        }
+
         const staticPaths = ['/images/', '/assets/', '/favicon.ico', '/favicon.png'];
         const matched = staticPaths.some((p) => decodedUrl.startsWith(p) || decodedUrl === p);
         if (matched) {
