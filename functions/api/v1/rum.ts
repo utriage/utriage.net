@@ -38,14 +38,24 @@ export async function onRequestPost({ request }: { request: Request }): Promise<
       forwardHeaders['X-Forwarded-For'] = clientIp;
     }
 
-    const upstreamResponse = await fetch('https://cloudflareinsights.com/cdn-cgi/rum', {
+    const referer = request.headers.get('Referer');
+    if (referer) {
+      forwardHeaders['Referer'] = referer;
+    }
+
+    const origin = request.headers.get('Origin');
+    if (origin) {
+      forwardHeaders['Origin'] = origin;
+    }
+
+    await fetch('https://cloudflareinsights.com/cdn-cgi/rum', {
       method: 'POST',
       headers: forwardHeaders,
       body: payload,
     });
 
     return new Response(null, {
-      status: upstreamResponse.status === 200 || upstreamResponse.status === 204 ? 204 : upstreamResponse.status,
+      status: 204,
       headers: {
         ...CORS_HEADERS,
         'Cache-Control': 'no-store, no-cache, must-revalidate',
