@@ -10,4 +10,4 @@ node_modules/
 dist/
 .lighthouseci/
 .wrangler/
-_worker.bundle/
+_worker.bundle
