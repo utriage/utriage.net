@@ -20,11 +20,14 @@ function legacyStaticPlugin() {
         const decodedUrl = decodeURI(req.url?.split('?')[0] || '');
 
         if (decodedUrl === '/assets/perf/v.js') {
-          res.setHeader('Content-Type', 'application/javascript');
-          res.end('/* Cloudflare Analytics dev stub */');
+          res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
+          res.end('/* Cloudflare Analytics dev stub (dummy script) */');
           return;
         }
         if (decodedUrl === '/api/v1/rum') {
+          res.setHeader('Access-Control-Allow-Origin', '*');
+          res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+          res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
           res.statusCode = 204;
           res.end();
           return;

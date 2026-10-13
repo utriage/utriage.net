@@ -23,6 +23,25 @@ export async function onRequestOptions(): Promise<Response> {
 export async function onRequestPost({ request }: { request: Request }): Promise<Response> {
 
   try {
+    const url = new URL(request.url);
+    const host = request.headers.get('Host') || url.hostname;
+    const referer = request.headers.get('Referer') || '';
+    const isLocal =
+      host.includes('localhost') ||
+      host.includes('127.0.0.1') ||
+      url.hostname === 'localhost' ||
+      url.hostname === '127.0.0.1' ||
+      referer.includes('localhost') ||
+      referer.includes('127.0.0.1');
+
+    // ローカル開発環境の場合は Cloudflare に POST せず、即座にダミー応答(204)を返す
+    if (isLocal) {
+      return new Response(null, {
+        status: 204,
+        headers: CORS_HEADERS,
+      });
+    }
+
     const payload = await request.text();
     const forwardHeaders: Record<string, string> = {
       'Content-Type': 'application/json',
@@ -38,7 +57,6 @@ export async function onRequestPost({ request }: { request: Request }): Promise<
       forwardHeaders['X-Forwarded-For'] = clientIp;
     }
 
-    const referer = request.headers.get('Referer');
     if (referer) {
       forwardHeaders['Referer'] = referer;
     }
