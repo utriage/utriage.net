@@ -22,10 +22,10 @@
   "homepage": "https://github.com/utriage/utriage.net#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/markdown-remark": "^7.3.0",
+    "@astrojs/markdown-remark": "^7.3.2",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
-    "astro": "^7.3.0",
+    "astro": "^7.3.8",
     "typescript": "~5.9.3",
     "unist-util-visit": "^5.1.0"
   },
