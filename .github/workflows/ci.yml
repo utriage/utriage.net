@@ -35,7 +35,6 @@ jobs:
 
       - name: Audit Performance & SEO (Lighthouse CI)
         run: npm run perf
-        continue-on-error: true
 
       - name: Upload Lighthouse Report
         uses: actions/upload-artifact@v4
