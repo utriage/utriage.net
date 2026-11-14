@@ -1,6 +1,16 @@
 import { glob } from 'astro/loaders';
 import type { Loader } from 'astro/loaders';
 
+function escapeAttr(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
+function filenameToAlt(url: string): string {
+  const filename = url.split('/').pop()?.split('?')[0] ?? '';
+  const stem = filename.replace(/\.[^.]+$/, '');
+  return stem.replace(/[_-]+/g, ' ').trim() || 'image';
+}
+
 export function transformLiquid(text: string): string {
   // 1. Gallery
   const galleryRegex =
@@ -14,16 +24,20 @@ export function transformLiquid(text: string): string {
       .map((s: string) => s.trim())
       .filter((s: string) => s.length > 0);
     const links = urls
-      .map((url: string) => `<a href="${url}" data-lightbox="${caption}"><img src="${url}" alt="" /></a>`)
+      .map((url: string) => {
+        const alt = escapeAttr(caption.trim() || filenameToAlt(url));
+        return `<a href="${url}" data-lightbox="${escapeAttr(caption)}"><img src="${url}" alt="${alt}" /></a>`;
+      })
       .join('\n');
     return `<figure${classAttr}>\n${links}\n<figcaption>${caption}</figcaption>\n</figure>`;
   });
 
   // 2. Image
   text = text.replace(
-    /{%\s*include\s+image\s+src=["'“”]?([^"'“”\s>]+)["'“”]?\s*%}(?:\{:[^}]+\})?/g,
-    (_, src) => {
-      return `<a href="${src}" data-lightbox="page"><img src="${src}" alt="" /></a>`;
+    /{%\s*include\s+image\s+src=["'“”]?([^"'“”\s>]+)["'“”]?(?:\s+alt=["'“”]([^"'“”]*)["'“”])?\s*%}(?:\{:[^}]+\})?/g,
+    (_, src, explicitAlt) => {
+      const alt = escapeAttr(explicitAlt?.trim() || filenameToAlt(src));
+      return `<a href="${src}" data-lightbox="page"><img src="${src}" alt="${alt}" /></a>`;
     }
   );
 

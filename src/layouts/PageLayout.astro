@@ -39,7 +39,7 @@ const { title, date, author, tags = [], excerpt, image, url } = Astro.props;
     </div>
   </div>
 
-  <div class="block-right">
+  <main class="block-right">
     <Navigation />
     <div class="inner-post content">
       <div class="date-highlight">
@@ -52,5 +52,5 @@ const { title, date, author, tags = [], excerpt, image, url } = Astro.props;
       <hr />
       <PagePagination />
     </div>
-  </div>
+  </main>
 </BaseLayout>
